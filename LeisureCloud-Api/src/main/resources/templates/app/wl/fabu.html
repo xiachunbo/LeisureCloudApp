@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<meta name="format-detection" content="telephone=no" />
+		<link rel="stylesheet" type="text/css" href="../../../static/app/wl/css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../../../static/app/wl/css/css.css"/>
+		<link rel="stylesheet" href="../../../static/app/wl/css/animations.css"/>
+		<script type="text/javascript" src="../../../static/app/wl/js/jquery-1.11.1.js" ></script>
+		<script src="../../../static/app/wl/js/swiper.min.js"></script>
+		<script src="../../../static/app/wl/js/swiper.animate1.0.3.min.js"></script>
+	</head>
+	<body>
+		<div class="main_bg">
+			<div class="data"><img src="../../../static/app/wl/img/fb_03.png"/></div>
+			<div class="list_video">
+				<ul class="ani">
+					<li data-wow-delay="0.2s" class="wow bounceInUp">
+						<img src="../../../static/app/wl/img/fb_07.png" />
+						<p >链接</p>
+						<div class="mids">
+							<span>可以直接发送视频连接哟！</span>
+							<div><img src="../../../static/app/wl/img/sanj_03.png"/></div>
+						</div>
+					</li>
+					<li class="wow bounceInUp" data-wow-delay="0.2s">
+						<img src="../../../static/app/wl/img/fb_09.png"/>
+						<p>视频</p>
+					</li>
+					<li class="wow bounceInUp" data-wow-delay="0.3s">
+						<img src="../../../static/app/wl/img/fb_11.png"/>
+						<p>链接</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="bot"><img src="../../../static/app/wl/img/fb_17.png"/></div>
+		<script type="text/javascript" src="../../../static/app/wl/js/js.js" ></script>
+		<script type="text/javascript" src="../../../static/app/wl/js/wow.min.js" ></script>
+		<script>
+            $(".bot").click(function(){
+                window.location.href="closewin://content";
+            })
+		</script>
+		<script>
+			new WOW().init();
+		</script>
+	</body>
+</html>

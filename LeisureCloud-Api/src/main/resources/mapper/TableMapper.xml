@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.drops.mapper.TableMapper">
+  <!-- 根据指定ID获取指定数据表的指定字段的数据集 -->
+  <select id="get" resultType="java.util.Map" statementType="PREPARED" >
+    select ${fields} from ${tableName} where 1 = 1
+    <foreach collection="parem.keys" item="key" index="index" open="" close="" separator="">
+      <if test="key!='tableName' and key!='column' and key!='id'">
+        and  #{key} = #{parem[${key}]}
+      </if>
+    </foreach>
+    <if test="ids != null and ids != ''">
+      and id in ( ${ids} )
+    </if>
+  </select>
+
+  <!-- 批量插入数据 -->
+  <insert id="insertBatch" parameterType="java.util.List">
+    insert into ${tableName}
+    (
+      <foreach collection="parem.keys" item="key" index="index" open="" close=""  separator=",">
+        <if test="key!='tableName' and key!='column'">
+          ${key}
+        </if>
+      </foreach>
+    )
+    values
+    <foreach collection="list" item="mydata" index="index"
+             separator=",">
+    (
+      <foreach collection="mydata.keys" item="key" index="index" open="" close="" separator=",">
+        <if test="key!='tableName' and key!='column'">
+          #{mydata[${key}]}
+        </if>
+      </foreach>
+    )
+    </foreach>
+  </insert>
+</mapper>
