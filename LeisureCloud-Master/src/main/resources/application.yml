@@ -1,0 +1,56 @@
+spring:
+  application:
+    name: LeisureCloud-Master
+
+  freemarker:
+      charset: UTF-8
+      allow-request-override: false
+      cache: true
+      expose-request-attributes: false
+      expose-session-attributes: false
+      content-type: text/html
+      template-loader-path: classpath:/templates/ , classpath:/templates/plateform\
+        \ , classpath:/templates/plateform/datatables
+      suffix: .html
+      expose-spring-macro-helpers: false
+      check-template-location: true
+  resources:
+      static-locations: classpath:/templates/
+
+master:
+    url: #192.168.50.66:9999
+
+server:
+  port: 9991
+  servlet:
+    session:
+      timeout: PT5M
+
+logging:
+    level:
+        com:
+            drops:
+                  dao: debug
+  #不能用localhost,否则启动报异常:Unresolved address
+  #tcp监听的端口
+tcp:
+  port: 9999
+  # bossGroup的线程数
+boss:
+  thread:
+    count: 2
+  # worker的线程数
+worker:
+  thread:
+    count: 20
+  #是否使用长连接
+so:
+  keepalive:  true
+  backlog: 100
+
+async:
+  executor:
+    thread:
+      core_pool_size: 5
+      max_pool_size: 20
+      queue_capacity: 5000
