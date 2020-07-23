@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="/static/Styles/admin-all.css" />
+    <link rel="stylesheet" type="text/css" href="/static/Styles/base.css" />
+    <link rel="stylesheet" type="text/css" href="/static/Styles/ui-lightness/jquery-ui-1.8.22.custom.css" />
+    <link rel="stylesheet" type="text/css" href="/static/Styles/chur.css" />
+    <link rel="stylesheet" type="text/css" href="/static/Styles/formui.css" />
+    <script type="text/javascript" src="/static/Scripts/jquery-1.7.2.js"></script>
+    <script type="text/javascript" src="/static/Scripts/jquery-ui-1.8.22.custom.min.js"></script>
+    <script type="text/javascript" src="/static/Scripts/index.js"></script>
+    <script type="text/javascript" src="/static/Scripts/ChurAlert.min.js?skin=blue"></script>
+    <script type="text/javascript" src="/static/Scripts/chur-alert.1.0.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(".datepicker").datepicker();
+            $('#find').click(function () {
+//                   queryAll(0, 10);
+                $('body').alert({
+                    type: 'warning',
+                    content:'退出操作，您确定要退出吗！',
+                    modal:true,
+                    draggabled:true,
+                    buttons: [{
+                        id: 'yes',
+                        name: '确定',
+                        callback: function () {
+                        }
+                    }, {
+                        id: 'no',
+                        name: '取消',
+                        callback: function () {
+                        }
+                    }]
+
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+<div class="alert alert-info">当前位置<b class="tip"></b>查询界面<b class="tip"></b>首页banner</div>
+<table class="tbform">
+    <thead>
+    <tr>
+        <!--                 <td colspan="6" class="auto-style2">&nbsp;请填写查询条件 </td> -->
+    </tr>
+    </thead>
+    <tbody>
+
+    <tr>
+        <td class="tdl">单据号</td>
+        <td class="detail">
+            <input type="text" class="ipt" />
+        </td>
+        <td class="tdl">单据类型</td>
+        <td class="td_detail">
+            <input type="text"  class="ipt"/></td>
+    </tr>
+    <tr>
+        <td class="tdl">提交日期起 </td>
+        <td>
+            <div class="input-append">
+                <input class="ipt datepicker" size="16" type="text" />
+                <span class="add-on"><i class="icon-calendar"></i></span>至
+                <input class="ipt  datepicker" size="16" type="text" /><span class="add-on"><i class="icon-calendar"></i></span>
+            </div>
+        </td>
+        <td class="tdl">报销人 </td>
+        <td>
+            <select size="1" name="select2" class="ipt">
+                <option value="10401"></option>
+                <option value="10388">第二营销事业部</option>
+                <option
+                        value="10389">第三营销事业部</option>
+                <option
+                        value="10390">第一营销事业部</option>
+                <option
+                        value="10391">康讯公司</option>
+                <option
+                        value="10392">网络事业部</option>
+                <option
+                        value="10393">移动事业部</option>
+            </select></td>
+    </tr>
+    <tr>
+        <td class="tdl">本币金额</td>
+        <td>
+            <div class="input-append">
+                <input class="ipt" id="Text2" size="16" type="text" /><span class="add-on">$</span>至<input class="ipt" id="Text3" size="16" type="text" /><span class="add-on">$</span>
+            </div>
+        </td>
+        <td class="tdl">申请人 </td>
+        <td colspan="3">
+            <input type="text" class="ipt"></td>
+    </tr>
+    <tr>
+        <td class="tdl">提交财务审核日期 </td>
+        <td>
+            <div class="input-append">
+                <input class="ipt datepicker" size="16" type="text" /><span class="add-on"> 至 <input class="ipt datepicker" size="16" type="text" /><span class="add-on"></span>
+            </div>
+        </td>
+        <td class="tdl">单据状态 </td>
+        <td colspan="3">
+            <select class="ipt" size="1" name="select4">
+                <option value="10401"></option>
+                <option value="10388">第二营销事业部</option>
+                <option
+                        value="10389">第三营销事业部</option>
+                <option
+                        value="10390">第一营销事业部</option>
+                <option
+                        value="10391">康讯公司</option>
+                <option
+                        value="11160">ZTE全球售后服务中心</option>
+            </select>
+            至
+            <select class="ipt"
+                    size="1" name="select5">
+                <option value="10401"></option>
+                <option value="10388">第二营销事业部</option>
+                <option
+                        value="10389">第三营销事业部</option>
+                <option
+                        value="11153">第五营销事业部</option>
+                <option
+                        value="11158">数据事业部</option>
+                <option
+                        value="11159">IT中心</option>
+                <option
+                        value="11160">ZTE全球售后服务中心</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="6" align="right">
+            <input class="btn" id="find" type="button" value="查询" />
+            <input class="btn" type="button" value="清空" /></td>
+    </tr>
+    </tbody>
+</table>
+<table class="tb" id="list">
+    <tbody>
+    <tr>
+        <th>客户公司ID </th>
+        <th>订单日期 </th>
+        <th>支付方式 </th>
+        <th>订单详细 </th>
+        <th>订单状态 </th>
+        <th>订单金额 </th>
+        <th>创建人 </th>
+        <th>创建时间 </th>
+    </tr>
+    <#if page??>
+        <#if page.list??>
+            <#list page.list as item>
+                <tr>
+                    <td>${item.customerId!}</td>
+                    <td>${item.orderDate!}</td>
+                    <td>${item.payTypeId!}</td>
+                    <td>${item.orderDetails!}</td>
+                    <td>${item.orderStatusId!}</td>
+                    <td>${item.orderAmount!}</td>
+                    <td>${item.createId!}</td>
+                    <td>${item.createDate!}</td>
+                </tr>
+            </#list>
+            <#else>
+                <tr> <p>   抱歉!暂时无数据 </p>  </tr>
+        </#if>
+        <#else>
+            <tr>  <p>   抱歉!暂时无数据 </p>  </tr>
+    </#if>
+
+
+    </tbody>
+    <#if page??>
+        <tr class="pager">
+            <th colspan="100"><div class="message">
+
+            </div>
+
+                <div style="text-align:center;">
+                    共<i class="blue">${page.total}</i>条记录，当前显示第 <i
+                        class="blue">${page.pageNum}/${page.pages}</i> 页
+                    <#if !page.isFirstPage >
+                        <a href="javascript:queryAll(${page.firstPage}, ${page.pageSize});"><<</a>
+                        <a href="javascript:queryAll(${page.prePage}, ${page.pageSize});"><</a>
+                        <#else>
+                            <a href=""><<</a>
+                            <a href=""><</a>
+                    </#if>
+                    <#list page.navigatepageNums as navigatepageNum>
+                        <#if navigatepageNum==page.pageNum>
+                            <a href="javascript:queryAll(${navigatepageNum}, ${page.pageSize});">${navigatepageNum}</a></li>
+                        </#if>
+                        <#if navigatepageNum!=page.pageNum>
+                            <a href="javascript:queryAll(${navigatepageNum}, ${page.pageSize});">${navigatepageNum}</a></li>
+                        </#if>
+                    </#list>
+                    <#if !page.isLastPage>
+                        <a href="javascript:queryAll(${page.nextPage}, ${page.pageSize});">></a>
+                        <a href="javascript:queryAll(${page.lastPage}, ${page.pageSize});">>></a>
+                        <#else>
+                            <a href="">></a>
+                            <a href="">>></a>
+                    </#if>
+                </div>    </th>
+        </tr>
+        <#else>
+            <tr class="pager">
+                <th colspan="100"><div class="message">
+
+                </div>
+
+                    <div style="text-align:center;">
+                        共<i class="blue">0</i>条记录，当前显示第 <i
+                            class="blue">1/1</i> 页
+                        <a href=""><<</a>
+                        <a href=""><</a>
+                        <a href="">1</a></li>
+                        <a href="">></a>
+                        <a href="">>></a>
+
+                    </div>    </th>
+            </tr>
+    </#if>
+</table>
+</body>
+<script type="text/javascript">
+    function queryAll(pageNum, pageSize){
+        document.location.href="order.do?pageNum="+pageNum;
+    }
+</script>
+</html>

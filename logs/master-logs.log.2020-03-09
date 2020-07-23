@@ -1,0 +1,138 @@
+2020-03-09 21:08:49  [ restartedMain:0 ] - [ INFO ]  Starting Application on chunbodeiMac with PID 16221 (/Users/chunboxia/Documents/MyFile/LeisureCloudApp/LeisureCloud-Api/target/classes started by chunboxia in /Users/chunboxia/Documents/MyFile/LeisureCloudApp)
+2020-03-09 21:08:49  [ restartedMain:3 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-03-09 21:08:49  [ restartedMain:59 ] - [ INFO ]  Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@22508e06: startup date [Mon Mar 09 21:08:49 CST 2020]; root of context hierarchy
+2020-03-09 21:08:49  [ restartedMain:614 ] - [ WARN ]  No MyBatis mapper was found in '[com.drops.mapper.*]' package. Please check your configuration.
+2020-03-09 21:08:50  [ restartedMain:1704 ] - [ INFO ]  Tomcat initialized with port(s): 8888 (http)
+2020-03-09 21:08:50  [ localhost-startStop-1:1840 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 1782 ms
+2020-03-09 21:08:51  [ localhost-startStop-1:1966 ] - [ INFO ]  Servlet dispatcherServlet mapped to [/]
+2020-03-09 21:08:51  [ localhost-startStop-1:1970 ] - [ INFO ]  Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-03-09 21:08:51  [ restartedMain:2758 ] - [ INFO ]  Initializing EhCache CacheManager
+2020-03-09 21:08:57  [ restartedMain:7996 ] - [ INFO ]  Initializing ExecutorService  'taskScheduler'
+2020-03-09 21:08:57  [ restartedMain:8133 ] - [ INFO ]  Mapped "{[/app/index]}" onto public java.lang.String com.drops.controller.AppController.echarts1(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-03-09 21:08:57  [ restartedMain:8135 ] - [ INFO ]  Mapped "{[/tests]}" onto public com.drops.tools.AjaxResult com.drops.controller.DataController.insert()
+2020-03-09 21:08:57  [ restartedMain:8135 ] - [ INFO ]  Mapped "{[/insert]}" onto public com.drops.tools.AjaxResult com.drops.controller.DataController.insert(java.lang.String,java.lang.String)
+2020-03-09 21:08:57  [ restartedMain:8135 ] - [ INFO ]  Mapped "{[/goHtml]}" onto public java.lang.String com.drops.controller.DataController.selectByParem(java.lang.String,java.lang.String,java.lang.String,int,int,org.springframework.ui.Model)
+2020-03-09 21:08:57  [ restartedMain:8136 ] - [ INFO ]  Mapped "{[/goHtmlByJson]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.drops.controller.DataController.goHtmlByJson(java.lang.String,java.lang.String,java.lang.String,int,int,org.springframework.ui.Model)
+2020-03-09 21:08:57  [ restartedMain:8136 ] - [ INFO ]  Mapped "{[/updateByParem]}" onto public java.lang.String com.drops.controller.DataController.updateByParem(java.lang.String,java.lang.String,java.lang.String)
+2020-03-09 21:08:57  [ restartedMain:8137 ] - [ INFO ]  Mapped "{[/deleteByParem]}" onto public java.lang.String com.drops.controller.DataController.deleteByParem(java.lang.String,java.lang.String)
+2020-03-09 21:08:57  [ restartedMain:8138 ] - [ INFO ]  Mapped "{[/echarts1]}" onto public java.lang.String com.drops.controller.EchartController.echarts1(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-03-09 21:08:57  [ restartedMain:8139 ] - [ INFO ]  Mapped "{[/echarts2]}" onto public java.lang.String com.drops.controller.EchartController.echarts2(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-03-09 21:08:57  [ restartedMain:8139 ] - [ INFO ]  Mapped "{[/echarts3]}" onto public java.lang.String com.drops.controller.EchartController.echarts3(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-03-09 21:08:57  [ restartedMain:8140 ] - [ INFO ]  Mapped "{[/echarts4]}" onto public java.lang.String com.drops.controller.EchartController.echarts4(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-03-09 21:08:57  [ restartedMain:8140 ] - [ INFO ]  Mapped "{[/echarts5]}" onto public java.lang.String com.drops.controller.EchartController.echarts5(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-03-09 21:08:57  [ restartedMain:8141 ] - [ INFO ]  Mapped "{[/echarts6]}" onto public java.lang.String com.drops.controller.EchartController.echarts6(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-03-09 21:08:57  [ restartedMain:8141 ] - [ INFO ]  Mapped "{[/echarts7]}" onto public java.lang.String com.drops.controller.EchartController.echarts7(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-03-09 21:08:57  [ restartedMain:8142 ] - [ INFO ]  Mapped "{[/echarts8]}" onto public java.lang.String com.drops.controller.EchartController.echarts8(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-03-09 21:08:57  [ restartedMain:8144 ] - [ INFO ]  Mapped "{[/login]}" onto public java.lang.String com.drops.controller.MenuController.homeHtml(java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-03-09 21:08:57  [ restartedMain:8145 ] - [ INFO ]  Mapped "{[/html/welcome]}" onto public java.lang.String com.drops.controller.MenuController.welcome(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-03-09 21:08:57  [ restartedMain:8145 ] - [ INFO ]  Mapped "{[/admin-add]}" onto public java.lang.String com.drops.controller.MenuController.adminadd(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-03-09 21:08:57  [ restartedMain:8145 ] - [ INFO ]  Mapped "{[/role-add]}" onto public java.lang.String com.drops.controller.MenuController.roleadd(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-03-09 21:08:57  [ restartedMain:8146 ] - [ INFO ]  Mapped "{[/lyear_pages_edit_pwd]}" onto public java.lang.String com.drops.controller.MenuController.memberpassword(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-03-09 21:08:57  [ restartedMain:8146 ] - [ INFO ]  Mapped "{[/admin-edit]}" onto public java.lang.String com.drops.controller.MenuController.adminedit(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-03-09 21:08:57  [ restartedMain:8147 ] - [ INFO ]  Mapped "{[/loginAjax],methods=[POST],produces=[application/json;charset=utf-8]}" onto public com.drops.tools.AjaxResult com.drops.controller.MenuController.login(java.lang.String,java.lang.String)
+2020-03-09 21:08:57  [ restartedMain:8147 ] - [ INFO ]  Mapped "{[/loginOut],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.drops.controller.MenuController.loginOut()
+2020-03-09 21:08:57  [ restartedMain:8148 ] - [ INFO ]  Mapped "{[/indexForJson],methods=[POST || GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.drops.controller.MenuController.indexForJson(java.lang.String,java.lang.String,java.lang.String,int,int,java.lang.String,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-03-09 21:08:57  [ restartedMain:8148 ] - [ INFO ]  Mapped "{[/index]}" onto public java.lang.String com.drops.controller.MenuController.helloHtml(java.lang.String,java.lang.String,java.lang.String,int,int,java.lang.String,org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-03-09 21:08:57  [ restartedMain:8149 ] - [ INFO ]  Mapped "{[/checkDataSource]}" onto public java.lang.String com.drops.controller.datasource.DataSourceController.selectByParem(java.lang.String)
+2020-03-09 21:08:57  [ restartedMain:8150 ] - [ INFO ]  Mapped "{[/export_users],methods=[GET]}" onto public void com.drops.controller.excel.ExcelController.exportWorkSchedules(javax.servlet.http.HttpServletResponse) throws java.text.ParseException,java.io.IOException
+2020-03-09 21:08:57  [ restartedMain:8150 ] - [ INFO ]  Mapped "{[/updateJob]}" onto public boolean com.drops.controller.task.TaskController.updateJob()
+2020-03-09 21:08:57  [ restartedMain:8151 ] - [ INFO ]  Mapped "{[/deleteJob]}" onto public boolean com.drops.controller.task.TaskController.deleteJob()
+2020-03-09 21:08:57  [ restartedMain:8151 ] - [ INFO ]  Mapped "{[/addJob]}" onto public java.lang.String com.drops.controller.task.TaskController.addJob()
+2020-03-09 21:08:57  [ restartedMain:8155 ] - [ INFO ]  Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-03-09 21:08:57  [ restartedMain:8155 ] - [ INFO ]  Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-03-09 21:08:57  [ restartedMain:8211 ] - [ INFO ]  Mapped URL path [/templates/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-09 21:08:57  [ restartedMain:8211 ] - [ INFO ]  Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-09 21:08:57  [ restartedMain:8284 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@22508e06: startup date [Mon Mar 09 21:08:49 CST 2020]; root of context hierarchy
+2020-03-09 21:08:57  [ restartedMain:8352 ] - [ INFO ]  Detected @ExceptionHandler methods in globalControllerExceptionHandler
+2020-03-09 21:08:57  [ restartedMain:8403 ] - [ INFO ]  Initializing ExecutorService  'ExecutorWeb'
+2020-03-09 21:08:57  [ restartedMain:8726 ] - [ INFO ]  SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@22508e06: startup date [Mon Mar 09 21:08:49 CST 2020]; root of context hierarchy] and template loader path [classpath:/templates/plateform\ \/]
+2020-03-09 21:08:57  [ restartedMain:8729 ] - [ INFO ]  ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2020-03-09 21:08:58  [ restartedMain:9070 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-03-09 21:08:58  [ restartedMain:9114 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2020-03-09 21:08:58  [ restartedMain:9115 ] - [ INFO ]  Bean with name 'datasource1' has been autodetected for JMX exposure
+2020-03-09 21:08:58  [ restartedMain:9115 ] - [ INFO ]  Bean with name 'datasource2' has been autodetected for JMX exposure
+2020-03-09 21:08:58  [ restartedMain:9120 ] - [ INFO ]  Located MBean 'datasource1': registering with JMX server as MBean [com.zaxxer.hikari:name=datasource1,type=HikariDataSource]
+2020-03-09 21:08:58  [ restartedMain:9122 ] - [ INFO ]  Located MBean 'datasource2': registering with JMX server as MBean [com.zaxxer.hikari:name=datasource2,type=HikariDataSource]
+2020-03-09 21:08:58  [ restartedMain:9173 ] - [ INFO ]  Tomcat started on port(s): 8888 (http) with context path ''
+2020-03-09 21:08:58  [ restartedMain:9179 ] - [ INFO ]  Started Application in 24.73 seconds (JVM running for 30.46)
+2020-03-09 21:09:36  [ nioEventLoopGroup-2-1:47268 ] - [ ERROR ]  服务端链接不上，开始重连操作...
+2020-03-09 21:09:44  [ http-nio-8888-exec-1:55847 ] - [ INFO ]  FrameworkServlet 'dispatcherServlet': initialization started
+2020-03-09 21:09:44  [ http-nio-8888-exec-1:55874 ] - [ INFO ]  FrameworkServlet 'dispatcherServlet': initialization completed in 26 ms
+2020-03-09 21:10:09  [ nioEventLoopGroup-3-1:80280 ] - [ ERROR ]  服务端链接不上，开始重连操作...
+2020-03-09 21:10:42  [ nioEventLoopGroup-4-1:113294 ] - [ ERROR ]  服务端链接不上，开始重连操作...
+2020-03-09 21:11:15  [ nioEventLoopGroup-5-1:146304 ] - [ ERROR ]  服务端链接不上，开始重连操作...
+2020-03-09 21:11:48  [ nioEventLoopGroup-6-1:179317 ] - [ ERROR ]  服务端链接不上，开始重连操作...
+2020-03-09 21:12:21  [ nioEventLoopGroup-7-1:212328 ] - [ ERROR ]  服务端链接不上，开始重连操作...
+2020-03-09 21:12:22  [ Thread-59:213493 ] - [ INFO ]  Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@22508e06: startup date [Mon Mar 09 21:08:49 CST 2020]; root of context hierarchy
+2020-03-09 21:12:22  [ Thread-59:213495 ] - [ INFO ]  Unregistering JMX-exposed beans on shutdown
+2020-03-09 21:12:22  [ Thread-59:213496 ] - [ INFO ]  Unregistering JMX-exposed beans
+2020-03-09 21:12:22  [ Thread-59:213497 ] - [ INFO ]  Shutting down ExecutorService 'ExecutorWeb'
+2020-03-09 21:12:22  [ Thread-59:213498 ] - [ INFO ]  Shutting down ExecutorService 'taskScheduler'
+2020-03-09 21:12:22  [ Thread-59:213498 ] - [ INFO ]  Shutting down EhCache CacheManager
+2020-03-09 21:12:45  [ restartedMain:0 ] - [ INFO ]  Starting Application on chunbodeiMac with PID 16337 (/Users/chunboxia/Documents/MyFile/LeisureCloudApp/LeisureCloud-Api/target/classes started by chunboxia in /Users/chunboxia/Documents/MyFile/LeisureCloudApp)
+2020-03-09 21:12:45  [ restartedMain:2 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-03-09 21:12:45  [ restartedMain:41 ] - [ INFO ]  Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6e173120: startup date [Mon Mar 09 21:12:45 CST 2020]; root of context hierarchy
+2020-03-09 21:12:46  [ restartedMain:466 ] - [ WARN ]  No MyBatis mapper was found in '[com.drops.mapper.*]' package. Please check your configuration.
+2020-03-09 21:12:46  [ restartedMain:1370 ] - [ INFO ]  Tomcat initialized with port(s): 8888 (http)
+2020-03-09 21:12:47  [ localhost-startStop-1:1477 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 1436 ms
+2020-03-09 21:12:47  [ localhost-startStop-1:1594 ] - [ INFO ]  Servlet dispatcherServlet mapped to [/]
+2020-03-09 21:12:47  [ localhost-startStop-1:1600 ] - [ INFO ]  Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-03-09 21:12:47  [ restartedMain:2284 ] - [ INFO ]  Initializing EhCache CacheManager
+2020-03-09 21:12:53  [ restartedMain:7521 ] - [ INFO ]  Initializing ExecutorService  'taskScheduler'
+2020-03-09 21:12:53  [ restartedMain:7661 ] - [ INFO ]  Mapped "{[/app/index]}" onto public java.lang.String com.drops.controller.AppController.echarts1(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-03-09 21:12:53  [ restartedMain:7662 ] - [ INFO ]  Mapped "{[/tests]}" onto public com.drops.tools.AjaxResult com.drops.controller.DataController.insert()
+2020-03-09 21:12:53  [ restartedMain:7663 ] - [ INFO ]  Mapped "{[/insert]}" onto public com.drops.tools.AjaxResult com.drops.controller.DataController.insert(java.lang.String,java.lang.String)
+2020-03-09 21:12:53  [ restartedMain:7663 ] - [ INFO ]  Mapped "{[/goHtml]}" onto public java.lang.String com.drops.controller.DataController.selectByParem(java.lang.String,java.lang.String,java.lang.String,int,int,org.springframework.ui.Model)
+2020-03-09 21:12:53  [ restartedMain:7664 ] - [ INFO ]  Mapped "{[/goHtmlByJson]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.drops.controller.DataController.goHtmlByJson(java.lang.String,java.lang.String,java.lang.String,int,int,org.springframework.ui.Model)
+2020-03-09 21:12:53  [ restartedMain:7664 ] - [ INFO ]  Mapped "{[/updateByParem]}" onto public java.lang.String com.drops.controller.DataController.updateByParem(java.lang.String,java.lang.String,java.lang.String)
+2020-03-09 21:12:53  [ restartedMain:7665 ] - [ INFO ]  Mapped "{[/deleteByParem]}" onto public java.lang.String com.drops.controller.DataController.deleteByParem(java.lang.String,java.lang.String)
+2020-03-09 21:12:53  [ restartedMain:7667 ] - [ INFO ]  Mapped "{[/echarts1]}" onto public java.lang.String com.drops.controller.EchartController.echarts1(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-03-09 21:12:53  [ restartedMain:7667 ] - [ INFO ]  Mapped "{[/echarts2]}" onto public java.lang.String com.drops.controller.EchartController.echarts2(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-03-09 21:12:53  [ restartedMain:7668 ] - [ INFO ]  Mapped "{[/echarts3]}" onto public java.lang.String com.drops.controller.EchartController.echarts3(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-03-09 21:12:53  [ restartedMain:7669 ] - [ INFO ]  Mapped "{[/echarts4]}" onto public java.lang.String com.drops.controller.EchartController.echarts4(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-03-09 21:12:53  [ restartedMain:7670 ] - [ INFO ]  Mapped "{[/echarts5]}" onto public java.lang.String com.drops.controller.EchartController.echarts5(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-03-09 21:12:53  [ restartedMain:7670 ] - [ INFO ]  Mapped "{[/echarts6]}" onto public java.lang.String com.drops.controller.EchartController.echarts6(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-03-09 21:12:53  [ restartedMain:7671 ] - [ INFO ]  Mapped "{[/echarts7]}" onto public java.lang.String com.drops.controller.EchartController.echarts7(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-03-09 21:12:53  [ restartedMain:7672 ] - [ INFO ]  Mapped "{[/echarts8]}" onto public java.lang.String com.drops.controller.EchartController.echarts8(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-03-09 21:12:53  [ restartedMain:7674 ] - [ INFO ]  Mapped "{[/login]}" onto public java.lang.String com.drops.controller.MenuController.homeHtml(java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-03-09 21:12:53  [ restartedMain:7675 ] - [ INFO ]  Mapped "{[/html/welcome]}" onto public java.lang.String com.drops.controller.MenuController.welcome(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-03-09 21:12:53  [ restartedMain:7676 ] - [ INFO ]  Mapped "{[/admin-add]}" onto public java.lang.String com.drops.controller.MenuController.adminadd(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-03-09 21:12:53  [ restartedMain:7676 ] - [ INFO ]  Mapped "{[/role-add]}" onto public java.lang.String com.drops.controller.MenuController.roleadd(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-03-09 21:12:53  [ restartedMain:7677 ] - [ INFO ]  Mapped "{[/lyear_pages_edit_pwd]}" onto public java.lang.String com.drops.controller.MenuController.memberpassword(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-03-09 21:12:53  [ restartedMain:7677 ] - [ INFO ]  Mapped "{[/admin-edit]}" onto public java.lang.String com.drops.controller.MenuController.adminedit(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-03-09 21:12:53  [ restartedMain:7678 ] - [ INFO ]  Mapped "{[/loginAjax],methods=[POST],produces=[application/json;charset=utf-8]}" onto public com.drops.tools.AjaxResult com.drops.controller.MenuController.login(java.lang.String,java.lang.String)
+2020-03-09 21:12:53  [ restartedMain:7678 ] - [ INFO ]  Mapped "{[/loginOut],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.drops.controller.MenuController.loginOut()
+2020-03-09 21:12:53  [ restartedMain:7678 ] - [ INFO ]  Mapped "{[/indexForJson],methods=[POST || GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.drops.controller.MenuController.indexForJson(java.lang.String,java.lang.String,java.lang.String,int,int,java.lang.String,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-03-09 21:12:53  [ restartedMain:7679 ] - [ INFO ]  Mapped "{[/index]}" onto public java.lang.String com.drops.controller.MenuController.helloHtml(java.lang.String,java.lang.String,java.lang.String,int,int,java.lang.String,org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-03-09 21:12:53  [ restartedMain:7680 ] - [ INFO ]  Mapped "{[/checkDataSource]}" onto public java.lang.String com.drops.controller.datasource.DataSourceController.selectByParem(java.lang.String)
+2020-03-09 21:12:53  [ restartedMain:7681 ] - [ INFO ]  Mapped "{[/export_users],methods=[GET]}" onto public void com.drops.controller.excel.ExcelController.exportWorkSchedules(javax.servlet.http.HttpServletResponse) throws java.text.ParseException,java.io.IOException
+2020-03-09 21:12:53  [ restartedMain:7682 ] - [ INFO ]  Mapped "{[/updateJob]}" onto public boolean com.drops.controller.task.TaskController.updateJob()
+2020-03-09 21:12:53  [ restartedMain:7682 ] - [ INFO ]  Mapped "{[/deleteJob]}" onto public boolean com.drops.controller.task.TaskController.deleteJob()
+2020-03-09 21:12:53  [ restartedMain:7682 ] - [ INFO ]  Mapped "{[/addJob]}" onto public java.lang.String com.drops.controller.task.TaskController.addJob()
+2020-03-09 21:12:53  [ restartedMain:7686 ] - [ INFO ]  Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-03-09 21:12:53  [ restartedMain:7687 ] - [ INFO ]  Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-03-09 21:12:53  [ restartedMain:7751 ] - [ INFO ]  Mapped URL path [/templates/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-09 21:12:53  [ restartedMain:7752 ] - [ INFO ]  Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-03-09 21:12:53  [ restartedMain:7811 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6e173120: startup date [Mon Mar 09 21:12:45 CST 2020]; root of context hierarchy
+2020-03-09 21:12:53  [ restartedMain:7876 ] - [ INFO ]  Detected @ExceptionHandler methods in globalControllerExceptionHandler
+2020-03-09 21:12:53  [ restartedMain:7941 ] - [ INFO ]  Initializing ExecutorService  'ExecutorWeb'
+2020-03-09 21:12:53  [ restartedMain:8154 ] - [ INFO ]  SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6e173120: startup date [Mon Mar 09 21:12:45 CST 2020]; root of context hierarchy] and template loader path [classpath:/templates/plateform\ \/]
+2020-03-09 21:12:53  [ restartedMain:8155 ] - [ INFO ]  ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2020-03-09 21:12:53  [ restartedMain:8404 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-03-09 21:12:54  [ restartedMain:8434 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2020-03-09 21:12:54  [ restartedMain:8435 ] - [ INFO ]  Bean with name 'datasource1' has been autodetected for JMX exposure
+2020-03-09 21:12:54  [ restartedMain:8436 ] - [ INFO ]  Bean with name 'datasource2' has been autodetected for JMX exposure
+2020-03-09 21:12:54  [ restartedMain:8441 ] - [ INFO ]  Located MBean 'datasource1': registering with JMX server as MBean [com.zaxxer.hikari:name=datasource1,type=HikariDataSource]
+2020-03-09 21:12:54  [ restartedMain:8442 ] - [ INFO ]  Located MBean 'datasource2': registering with JMX server as MBean [com.zaxxer.hikari:name=datasource2,type=HikariDataSource]
+2020-03-09 21:12:54  [ restartedMain:8483 ] - [ INFO ]  Tomcat started on port(s): 8888 (http) with context path ''
+2020-03-09 21:12:54  [ restartedMain:8488 ] - [ INFO ]  Started Application in 23.884 seconds (JVM running for 29.805)
+2020-03-09 21:12:58  [ http-nio-8888-exec-1:13341 ] - [ INFO ]  FrameworkServlet 'dispatcherServlet': initialization started
+2020-03-09 21:12:58  [ http-nio-8888-exec-1:13365 ] - [ INFO ]  FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+2020-03-09 21:13:32  [ nioEventLoopGroup-2-1:46561 ] - [ ERROR ]  服务端链接不上，开始重连操作...
+2020-03-09 21:14:05  [ nioEventLoopGroup-3-1:79574 ] - [ ERROR ]  服务端链接不上，开始重连操作...
+2020-03-09 21:14:30  [ Thread-57:105176 ] - [ INFO ]  Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6e173120: startup date [Mon Mar 09 21:12:45 CST 2020]; root of context hierarchy
+2020-03-09 21:14:30  [ Thread-57:105179 ] - [ INFO ]  Unregistering JMX-exposed beans on shutdown
+2020-03-09 21:14:30  [ Thread-57:105179 ] - [ INFO ]  Unregistering JMX-exposed beans
+2020-03-09 21:14:30  [ Thread-57:105180 ] - [ INFO ]  Shutting down ExecutorService 'ExecutorWeb'
+2020-03-09 21:14:30  [ Thread-57:105181 ] - [ INFO ]  Shutting down ExecutorService 'taskScheduler'
+2020-03-09 21:14:30  [ Thread-57:105181 ] - [ INFO ]  Shutting down EhCache CacheManager

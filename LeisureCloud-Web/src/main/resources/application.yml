@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: webservice
+
+  freemarker:
+      charset: UTF-8
+      allow-request-override: false
+      cache: true
+      expose-request-attributes: false
+      expose-session-attributes: false
+      content-type: text/html
+      template-loader-path: classpath:/templates/ , classpath:/templates/plateform\
+        \ , classpath:/templates/plateform/datatables
+      suffix: .html
+      expose-spring-macro-helpers: false
+      check-template-location: true
+  resources:
+      static-locations: classpath:/templates/
+
+server:
+  port: 8082 #service0 占用8082
+
+master:
+    url: 192.168.50.12:9991
+
+xcloud:
+  uploadPath: /Users/xiaobobo/Desktop/upload/
+media:
+  save:
+    urlprefix: https://www.lovebobo.cn

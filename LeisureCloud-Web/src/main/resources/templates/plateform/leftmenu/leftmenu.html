@@ -1,0 +1,29 @@
+   <!--左边菜单开始-->
+        <div class="left_c left">
+            <h1 style="line-height: 66px;">★ 系统操作菜单</h1>
+            <div class="acc" style="margin-top: 30px;">
+                <#list page as item>
+                    <#if (item)?exists && item.parentid == 0>
+                        <div>
+                            <#if item_index == 0>
+                                <a class="one one-hover">➤ ${item.menuName!''}</a>
+                                <ul class="kid" style="display: block;">
+                            </#if>
+                            <#if item_index != 0>
+                                <a class="one">➤ ${item.menuName!''}</a>
+                                <ul class="kid">
+                            </#if>
+                                <#list page as sub>
+                                    <#if sub.parentid == item.menuId>
+                                        <li><b class="tip"></b><a target="Conframe" href="${sub.menuUrl!''}">${sub.menuName!''}</a></li>
+                                    </#if>
+                                </#list>
+                            </ul>
+                        </div>
+                    </#if>
+                </#list>
+<!--                 <div id="datepicker"></div> -->
+            </div>
+
+        </div>
+        <!--左边菜单结束-->

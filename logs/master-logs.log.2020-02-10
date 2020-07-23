@@ -1,0 +1,358 @@
+2020-02-10 03:26:25  [ restartedMain:0 ] - [ INFO ]  Starting Application on DESKTOP-80SUII4 with PID 3568 (D:\MyFile\LeisureCloudApp\LeisureCloud-Api\target\classes started by DELL in D:\MyFile\LeisureCloudApp)
+2020-02-10 03:26:25  [ restartedMain:38 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-02-10 03:26:26  [ restartedMain:648 ] - [ INFO ]  Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2a16473a: startup date [Mon Feb 10 03:26:26 IRKT 2020]; root of context hierarchy
+2020-02-10 03:26:28  [ restartedMain:2694 ] - [ WARN ]  No MyBatis mapper was found in '[com.drops.mapper.*]' package. Please check your configuration.
+2020-02-10 03:26:32  [ restartedMain:6588 ] - [ INFO ]  Tomcat initialized with port(s): 7777 (http)
+2020-02-10 03:26:32  [ localhost-startStop-1:7057 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 6409 ms
+2020-02-10 03:26:32  [ localhost-startStop-1:7513 ] - [ INFO ]  Servlet dispatcherServlet mapped to [/]
+2020-02-10 03:26:32  [ localhost-startStop-1:7530 ] - [ INFO ]  Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-02-10 03:26:36  [ restartedMain:10819 ] - [ INFO ]  Initializing EhCache CacheManager
+2020-02-10 03:26:37  [ restartedMain:12240 ] - [ INFO ]  Initializing ExecutorService  'taskScheduler'
+2020-02-10 03:26:38  [ restartedMain:12944 ] - [ INFO ]  Mapped "{[/app/index]}" onto public java.lang.String com.drops.controller.AppController.echarts1(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-02-10 03:26:38  [ restartedMain:12959 ] - [ INFO ]  Mapped "{[/tests]}" onto public com.drops.tools.AjaxResult com.drops.controller.DataController.insert()
+2020-02-10 03:26:38  [ restartedMain:12959 ] - [ INFO ]  Mapped "{[/insert]}" onto public com.drops.tools.AjaxResult com.drops.controller.DataController.insert(java.lang.String,java.lang.String)
+2020-02-10 03:26:38  [ restartedMain:12959 ] - [ INFO ]  Mapped "{[/updateByParem]}" onto public java.lang.String com.drops.controller.DataController.updateByParem(java.lang.String,java.lang.String,java.lang.String)
+2020-02-10 03:26:38  [ restartedMain:12959 ] - [ INFO ]  Mapped "{[/deleteByParem]}" onto public java.lang.String com.drops.controller.DataController.deleteByParem(java.lang.String,java.lang.String)
+2020-02-10 03:26:38  [ restartedMain:12959 ] - [ INFO ]  Mapped "{[/goHtmlByJson]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.drops.controller.DataController.goHtmlByJson(java.lang.String,java.lang.String,java.lang.String,int,int,org.springframework.ui.Model)
+2020-02-10 03:26:38  [ restartedMain:12959 ] - [ INFO ]  Mapped "{[/goHtml]}" onto public java.lang.String com.drops.controller.DataController.selectByParem(java.lang.String,java.lang.String,java.lang.String,int,int,org.springframework.ui.Model)
+2020-02-10 03:26:38  [ restartedMain:12959 ] - [ INFO ]  Mapped "{[/checkDataSource]}" onto public java.lang.String com.drops.controller.datasource.DataSourceController.selectByParem(java.lang.String)
+2020-02-10 03:26:38  [ restartedMain:12959 ] - [ INFO ]  Mapped "{[/echarts6]}" onto public java.lang.String com.drops.controller.EchartController.echarts6(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-02-10 03:26:38  [ restartedMain:12959 ] - [ INFO ]  Mapped "{[/echarts8]}" onto public java.lang.String com.drops.controller.EchartController.echarts8(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-02-10 03:26:38  [ restartedMain:12959 ] - [ INFO ]  Mapped "{[/echarts7]}" onto public java.lang.String com.drops.controller.EchartController.echarts7(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-02-10 03:26:38  [ restartedMain:12975 ] - [ INFO ]  Mapped "{[/echarts5]}" onto public java.lang.String com.drops.controller.EchartController.echarts5(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-02-10 03:26:38  [ restartedMain:12975 ] - [ INFO ]  Mapped "{[/echarts2]}" onto public java.lang.String com.drops.controller.EchartController.echarts2(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-02-10 03:26:38  [ restartedMain:12975 ] - [ INFO ]  Mapped "{[/echarts4]}" onto public java.lang.String com.drops.controller.EchartController.echarts4(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-02-10 03:26:38  [ restartedMain:12975 ] - [ INFO ]  Mapped "{[/echarts3]}" onto public java.lang.String com.drops.controller.EchartController.echarts3(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-02-10 03:26:38  [ restartedMain:12975 ] - [ INFO ]  Mapped "{[/echarts1]}" onto public java.lang.String com.drops.controller.EchartController.echarts1(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-02-10 03:26:38  [ restartedMain:12990 ] - [ INFO ]  Mapped "{[/export_users],methods=[GET]}" onto public void com.drops.controller.excel.ExcelController.exportWorkSchedules(javax.servlet.http.HttpServletResponse) throws java.text.ParseException,java.io.IOException
+2020-02-10 03:26:38  [ restartedMain:12990 ] - [ INFO ]  Mapped "{[/index]}" onto public java.lang.String com.drops.controller.MenuController.helloHtml(java.lang.String,java.lang.String,java.lang.String,int,int,java.lang.String,org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-02-10 03:26:38  [ restartedMain:12990 ] - [ INFO ]  Mapped "{[/role-add]}" onto public java.lang.String com.drops.controller.MenuController.roleadd(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-02-10 03:26:38  [ restartedMain:12990 ] - [ INFO ]  Mapped "{[/admin-edit]}" onto public java.lang.String com.drops.controller.MenuController.adminedit(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-02-10 03:26:38  [ restartedMain:12990 ] - [ INFO ]  Mapped "{[/loginAjax],methods=[POST],produces=[application/json;charset=utf-8]}" onto public com.drops.tools.AjaxResult com.drops.controller.MenuController.login(java.lang.String,java.lang.String)
+2020-02-10 03:26:38  [ restartedMain:12990 ] - [ INFO ]  Mapped "{[/admin-add]}" onto public java.lang.String com.drops.controller.MenuController.adminadd(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-02-10 03:26:38  [ restartedMain:13006 ] - [ INFO ]  Mapped "{[/html/welcome]}" onto public java.lang.String com.drops.controller.MenuController.welcome(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-02-10 03:26:38  [ restartedMain:13006 ] - [ INFO ]  Mapped "{[/indexForJson],methods=[POST || GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.drops.controller.MenuController.indexForJson(java.lang.String,java.lang.String,java.lang.String,int,int,java.lang.String,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-02-10 03:26:38  [ restartedMain:13006 ] - [ INFO ]  Mapped "{[/loginOut],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.drops.controller.MenuController.loginOut()
+2020-02-10 03:26:38  [ restartedMain:13006 ] - [ INFO ]  Mapped "{[/login]}" onto public java.lang.String com.drops.controller.MenuController.homeHtml(java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-02-10 03:26:38  [ restartedMain:13006 ] - [ INFO ]  Mapped "{[/lyear_pages_edit_pwd]}" onto public java.lang.String com.drops.controller.MenuController.memberpassword(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-02-10 03:26:38  [ restartedMain:13006 ] - [ INFO ]  Mapped "{[/addJob]}" onto public java.lang.String com.drops.controller.task.TaskController.addJob()
+2020-02-10 03:26:38  [ restartedMain:13006 ] - [ INFO ]  Mapped "{[/deleteJob]}" onto public boolean com.drops.controller.task.TaskController.deleteJob()
+2020-02-10 03:26:38  [ restartedMain:13006 ] - [ INFO ]  Mapped "{[/updateJob]}" onto public boolean com.drops.controller.task.TaskController.updateJob()
+2020-02-10 03:26:38  [ restartedMain:13022 ] - [ INFO ]  Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-02-10 03:26:38  [ restartedMain:13022 ] - [ INFO ]  Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-02-10 03:26:38  [ restartedMain:13412 ] - [ INFO ]  Mapped URL path [/templates/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-10 03:26:38  [ restartedMain:13412 ] - [ INFO ]  Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-10 03:26:39  [ restartedMain:13725 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@2a16473a: startup date [Mon Feb 10 03:26:26 IRKT 2020]; root of context hierarchy
+2020-02-10 03:26:39  [ restartedMain:13912 ] - [ INFO ]  Detected @ExceptionHandler methods in globalControllerExceptionHandler
+2020-02-10 03:26:39  [ restartedMain:14115 ] - [ INFO ]  Initializing ExecutorService  'ExecutorWeb'
+2020-02-10 03:26:40  [ restartedMain:15406 ] - [ INFO ]  ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2020-02-10 03:26:41  [ restartedMain:16547 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-02-10 03:26:42  [ restartedMain:16687 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2020-02-10 03:26:42  [ restartedMain:16687 ] - [ INFO ]  Bean with name 'datasource1' has been autodetected for JMX exposure
+2020-02-10 03:26:42  [ restartedMain:16687 ] - [ INFO ]  Bean with name 'datasource2' has been autodetected for JMX exposure
+2020-02-10 03:26:42  [ restartedMain:16703 ] - [ INFO ]  Located MBean 'datasource1': registering with JMX server as MBean [com.zaxxer.hikari:name=datasource1,type=HikariDataSource]
+2020-02-10 03:26:42  [ restartedMain:16719 ] - [ INFO ]  Located MBean 'datasource2': registering with JMX server as MBean [com.zaxxer.hikari:name=datasource2,type=HikariDataSource]
+2020-02-10 03:26:42  [ restartedMain:16859 ] - [ INFO ]  Tomcat started on port(s): 7777 (http) with context path ''
+2020-02-10 03:26:42  [ restartedMain:16875 ] - [ INFO ]  Started Application in 18.277 seconds (JVM running for 24.612)
+2020-02-10 03:26:55  [ nioEventLoopGroup-2-1:30218 ] - [ ERROR ]  服务端链接不上，开始重连操作...
+2020-02-10 03:27:00  [ nioEventLoopGroup-3-1:35437 ] - [ ERROR ]  服务端链接不上，开始重连操作...
+2020-02-10 03:27:06  [ nioEventLoopGroup-4-1:40922 ] - [ ERROR ]  服务端链接不上，开始重连操作...
+2020-02-10 03:27:12  [ nioEventLoopGroup-5-1:46630 ] - [ ERROR ]  服务端链接不上，开始重连操作...
+2020-02-10 03:27:17  [ nioEventLoopGroup-6-1:52108 ] - [ ERROR ]  服务端链接不上，开始重连操作...
+2020-02-10 03:27:22  [ nioEventLoopGroup-7-1:57436 ] - [ ERROR ]  服务端链接不上，开始重连操作...
+2020-02-10 03:27:22  [ nioEventLoopGroup-8-1:57467 ] - [ ERROR ]  服务端链接成功...
+2020-02-10 03:27:22  [ nioEventLoopGroup-8-1:57483 ] - [ INFO ]  HeartBeatClientHandler channelActive[当前连接数:1]
+2020-02-10 03:27:23  [ nioEventLoopGroup-8-1:57592 ] - [ INFO ]  收到来自服务端[masterservice0x4fc34c05]消息:欢迎加入群聊
+ntroller.insert()
+2020-02-10 03:26:50  [ restartedMain:14072 ] - [ INFO ]  Mapped "{[/insert]}" onto public com.drops.tools.AjaxResult com.drops.controller.DataController.insert(java.lang.String,java.lang.String)
+2020-02-10 03:26:50  [ restartedMain:14087 ] - [ INFO ]  Mapped "{[/goHtml]}" onto public java.lang.String com.drops.controller.DataController.selectByParem(java.lang.String,java.lang.String,java.lang.String,int,int,org.springframework.ui.Model)
+2020-02-10 03:26:50  [ restartedMain:14087 ] - [ INFO ]  Mapped "{[/goHtmlByJson]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.drops.controller.DataController.goHtmlByJson(java.lang.String,java.lang.String,java.lang.String,int,int,org.springframework.ui.Model)
+2020-02-10 03:26:50  [ restartedMain:14087 ] - [ INFO ]  Mapped "{[/updateByParem]}" onto public java.lang.String com.drops.controller.DataController.updateByParem(java.lang.String,java.lang.String,java.lang.String)
+2020-02-10 03:26:50  [ restartedMain:14087 ] - [ INFO ]  Mapped "{[/deleteByParem]}" onto public java.lang.String com.drops.controller.DataController.deleteByParem(java.lang.String,java.lang.String)
+2020-02-10 03:26:50  [ restartedMain:14087 ] - [ INFO ]  Mapped "{[/checkDataSource]}" onto public java.lang.String com.drops.controller.datasource.DataSourceController.selectByParem(java.lang.String)
+2020-02-10 03:26:50  [ restartedMain:14118 ] - [ INFO ]  Mapped "{[/echarts5]}" onto public java.lang.String com.drops.controller.EchartController.echarts5(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-02-10 03:26:50  [ restartedMain:14118 ] - [ INFO ]  Mapped "{[/echarts3]}" onto public java.lang.String com.drops.controller.EchartController.echarts3(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-02-10 03:26:50  [ restartedMain:14134 ] - [ INFO ]  Mapped "{[/echarts2]}" onto public java.lang.String com.drops.controller.EchartController.echarts2(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-02-10 03:26:51  [ restartedMain:14165 ] - [ INFO ]  Mapped "{[/echarts4]}" onto public java.lang.String com.drops.controller.EchartController.echarts4(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-02-10 03:26:51  [ restartedMain:14165 ] - [ INFO ]  Mapped "{[/echarts6]}" onto public java.lang.String com.drops.controller.EchartController.echarts6(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-02-10 03:26:51  [ restartedMain:14165 ] - [ INFO ]  Mapped "{[/echarts8]}" onto public java.lang.String com.drops.controller.EchartController.echarts8(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-02-10 03:26:51  [ restartedMain:14181 ] - [ INFO ]  Mapped "{[/echarts7]}" onto public java.lang.String com.drops.controller.EchartController.echarts7(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-02-10 03:26:51  [ restartedMain:14181 ] - [ INFO ]  Mapped "{[/echarts1]}" onto public java.lang.String com.drops.controller.EchartController.echarts1(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-02-10 03:26:51  [ restartedMain:14181 ] - [ INFO ]  Mapped "{[/export_users],methods=[GET]}" onto public void com.drops.controller.excel.ExcelController.exportWorkSchedules(javax.servlet.http.HttpServletResponse) throws java.text.ParseException,java.io.IOException
+2020-02-10 03:26:51  [ restartedMain:14197 ] - [ INFO ]  Mapped "{[/html/welcome]}" onto public java.lang.String com.drops.controller.MenuController.welcome(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-02-10 03:26:51  [ restartedMain:14243 ] - [ INFO ]  Mapped "{[/role-add]}" onto public java.lang.String com.drops.controller.MenuController.roleadd(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-02-10 03:26:51  [ restartedMain:14243 ] - [ INFO ]  Mapped "{[/admin-edit]}" onto public java.lang.String com.drops.controller.MenuController.adminedit(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-02-10 03:26:51  [ restartedMain:14243 ] - [ INFO ]  Mapped "{[/login]}" onto public java.lang.String com.drops.controller.MenuController.homeHtml(java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-02-10 03:26:51  [ restartedMain:14243 ] - [ INFO ]  Mapped "{[/loginAjax],methods=[POST],produces=[application/json;charset=utf-8]}" onto public com.drops.tools.AjaxResult com.drops.controller.MenuController.login(java.lang.String,java.lang.String)
+2020-02-10 03:26:51  [ restartedMain:14243 ] - [ INFO ]  Mapped "{[/admin-add]}" onto public java.lang.String com.drops.controller.MenuController.adminadd(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-02-10 03:26:51  [ restartedMain:14259 ] - [ INFO ]  Mapped "{[/lyear_pages_edit_pwd]}" onto public java.lang.String com.drops.controller.MenuController.memberpassword(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-02-10 03:26:51  [ restartedMain:14306 ] - [ INFO ]  Mapped "{[/loginOut],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.drops.controller.MenuController.loginOut()
+2020-02-10 03:26:51  [ restartedMain:14306 ] - [ INFO ]  Mapped "{[/indexForJson],methods=[POST || GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.drops.controller.MenuController.indexForJson(java.lang.String,java.lang.String,java.lang.String,int,int,java.lang.String,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-02-10 03:26:51  [ restartedMain:14306 ] - [ INFO ]  Mapped "{[/index]}" onto public java.lang.String com.drops.controller.MenuController.helloHtml(java.lang.String,java.lang.String,java.lang.String,int,int,java.lang.String,org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-02-10 03:26:51  [ restartedMain:14322 ] - [ INFO ]  Mapped "{[/addJob]}" onto public java.lang.String com.drops.controller.task.TaskController.addJob()
+2020-02-10 03:26:51  [ restartedMain:14322 ] - [ INFO ]  Mapped "{[/deleteJob]}" onto public boolean com.drops.controller.task.TaskController.deleteJob()
+2020-02-10 03:26:51  [ restartedMain:14322 ] - [ INFO ]  Mapped "{[/updateJob]}" onto public boolean com.drops.controller.task.TaskController.updateJob()
+2020-02-10 03:26:51  [ restartedMain:14337 ] - [ INFO ]  Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-02-10 03:26:51  [ restartedMain:14337 ] - [ INFO ]  Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-02-10 03:26:52  [ restartedMain:15165 ] - [ INFO ]  Mapped URL path [/templates/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-10 03:26:52  [ restartedMain:15165 ] - [ INFO ]  Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-10 03:26:52  [ restartedMain:15431 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@36afe37f: startup date [Mon Feb 10 03:26:37 IRKT 2020]; root of context hierarchy
+2020-02-10 03:26:52  [ restartedMain:15634 ] - [ INFO ]  Detected @ExceptionHandler methods in globalControllerExceptionHandler
+2020-02-10 03:26:52  [ restartedMain:15868 ] - [ INFO ]  Initializing ExecutorService  'ExecutorWeb'
+2020-02-10 03:26:53  [ restartedMain:16978 ] - [ INFO ]  ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2020-02-10 03:26:54  [ restartedMain:0 ] - [ INFO ]  Starting Application on DESKTOP-80SUII4 with PID 13508 (D:\MyFile\LeisureCloudApp\LeisureCloud-Master\target\classes started by DELL in D:\MyFile\LeisureCloudApp)
+2020-02-10 03:26:54  [ restartedMain:15 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-02-10 03:26:54  [ restartedMain:234 ] - [ INFO ]  Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6d1c8790: startup date [Mon Feb 10 03:26:54 IRKT 2020]; root of context hierarchy
+2020-02-10 03:26:54  [ restartedMain:18149 ] - [ WARN ]  Unable to start LiveReload server
+2020-02-10 03:26:55  [ restartedMain:18353 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2020-02-10 03:26:55  [ restartedMain:18353 ] - [ INFO ]  Bean with name 'datasource1' has been autodetected for JMX exposure
+2020-02-10 03:26:55  [ restartedMain:18353 ] - [ INFO ]  Bean with name 'datasource2' has been autodetected for JMX exposure
+2020-02-10 03:26:55  [ restartedMain:18384 ] - [ INFO ]  Located MBean 'datasource1': registering with JMX server as MBean [com.zaxxer.hikari:name=datasource1,type=HikariDataSource]
+2020-02-10 03:26:55  [ restartedMain:18384 ] - [ INFO ]  Located MBean 'datasource2': registering with JMX server as MBean [com.zaxxer.hikari:name=datasource2,type=HikariDataSource]
+2020-02-10 03:26:55  [ restartedMain:18774 ] - [ INFO ]  Tomcat started on port(s): 8888 (http) with context path ''
+2020-02-10 03:26:55  [ restartedMain:18790 ] - [ INFO ]  Started Application in 20.618 seconds (JVM running for 26.846)
+2020-02-10 03:26:57  [ restartedMain:2812 ] - [ WARN ]  No MyBatis mapper was found in '[com.drops.mapper.*]' package. Please check your configuration.
+2020-02-10 03:27:02  [ restartedMain:7866 ] - [ INFO ]  Tomcat initialized with port(s): 9991 (http)
+2020-02-10 03:27:03  [ localhost-startStop-1:8382 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 8164 ms
+2020-02-10 03:27:03  [ localhost-startStop-1:8882 ] - [ INFO ]  Servlet dispatcherServlet mapped to [/]
+2020-02-10 03:27:03  [ localhost-startStop-1:8913 ] - [ INFO ]  Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-02-10 03:27:10  [ nioEventLoopGroup-2-1:33830 ] - [ ERROR ]  服务端链接不上，开始重连操作...
+2020-02-10 03:27:16  [ nioEventLoopGroup-3-1:39357 ] - [ ERROR ]  服务端链接不上，开始重连操作...
+2020-02-10 03:27:21  [ nioEventLoopGroup-4-1:44617 ] - [ ERROR ]  服务端链接不上，开始重连操作...
+2020-02-10 03:27:22  [ nioEventLoopGroup-5-1:45305 ] - [ ERROR ]  服务端链接成功...
+2020-02-10 03:27:22  [ nioEventLoopGroup-5-1:45305 ] - [ INFO ]  HeartBeatClientHandler channelActive[当前连接数:1]
+2020-02-10 03:27:22  [ nioEventLoopGroup-3-1:27733 ] - [ INFO ]  0x504e3a28的设备加入群聊Online1
+2020-02-10 03:27:22  [ nioEventLoopGroup-3-1:27733 ] - [ INFO ]  [服务端提醒您:用户[0x504e3a28]已连接
+2020-02-10 03:27:22  [ nioEventLoopGroup-3-1:27889 ] - [ INFO ]  收到来自用户[crawlerservice-- > 0x504e3a28]消息connect[当前连接数:1]
+2020-02-10 03:27:22  [ nioEventLoopGroup-5-1:45758 ] - [ INFO ]  收到来自服务端[masterservice0x53ca0df6]消息:欢迎加入群聊
+2020-02-10 03:27:22  [ restartedMain:27920 ] - [ INFO ]  Mapped "{[/app/index]}" onto public java.lang.String com.drops.controller.AppController.echarts1(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-02-10 03:27:22  [ restartedMain:27920 ] - [ INFO ]  Mapped "{[/insert]}" onto public com.drops.tools.AjaxResult com.drops.controller.DataController.insert(java.lang.String,java.lang.String)
+2020-02-10 03:27:22  [ restartedMain:27920 ] - [ INFO ]  Mapped "{[/tests]}" onto public com.drops.tools.AjaxResult com.drops.controller.DataController.insert()
+2020-02-10 03:27:22  [ restartedMain:27920 ] - [ INFO ]  Mapped "{[/deleteByParem]}" onto public java.lang.String com.drops.controller.DataController.deleteByParem(java.lang.String,java.lang.String)
+2020-02-10 03:27:22  [ restartedMain:27920 ] - [ INFO ]  Mapped "{[/goHtmlByJson]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.drops.controller.DataController.goHtmlByJson(java.lang.String,java.lang.String,java.lang.String,int,int,org.springframework.ui.Model)
+2020-02-10 03:27:22  [ restartedMain:27920 ] - [ INFO ]  Mapped "{[/goServices]}" onto public java.lang.String com.drops.controller.DataController.goServices(java.lang.String,java.lang.String,java.lang.String,int,int,int,org.springframework.ui.Model)
+2020-02-10 03:27:22  [ restartedMain:27920 ] - [ INFO ]  Mapped "{[/goHtml]}" onto public java.lang.String com.drops.controller.DataController.selectByParem(java.lang.String,java.lang.String,java.lang.String,int,int,org.springframework.ui.Model)
+2020-02-10 03:27:22  [ restartedMain:27936 ] - [ INFO ]  Mapped "{[/updateByParem]}" onto public java.lang.String com.drops.controller.DataController.updateByParem(java.lang.String,java.lang.String,java.lang.String)
+2020-02-10 03:27:22  [ restartedMain:27936 ] - [ INFO ]  Mapped "{[/login]}" onto public java.lang.String com.drops.controller.MenuController.homeHtml(java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-02-10 03:27:22  [ restartedMain:27936 ] - [ INFO ]  Mapped "{[/index],methods=[GET],produces=[text/html;charset=utf-8]}" onto public java.lang.String com.drops.controller.MenuController.helloHtml(java.lang.String,java.lang.String,java.lang.String,int,int,java.lang.String,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-02-10 03:27:22  [ restartedMain:27936 ] - [ INFO ]  Mapped "{[/admin-edit]}" onto public java.lang.String com.drops.controller.MenuController.adminedit(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-02-10 03:27:22  [ restartedMain:27936 ] - [ INFO ]  Mapped "{[/lyear_pages_edit_pwd]}" onto public java.lang.String com.drops.controller.MenuController.memberpassword(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-02-10 03:27:22  [ restartedMain:27936 ] - [ INFO ]  Mapped "{[/html/welcome]}" onto public java.lang.String com.drops.controller.MenuController.welcome(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-02-10 03:27:22  [ restartedMain:27952 ] - [ INFO ]  Mapped "{[/admin-add]}" onto public java.lang.String com.drops.controller.MenuController.adminadd(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-02-10 03:27:22  [ restartedMain:27952 ] - [ INFO ]  Mapped "{[/loginAjax],methods=[POST],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.drops.controller.MenuController.login(java.lang.String,java.lang.String)
+2020-02-10 03:27:22  [ restartedMain:27952 ] - [ INFO ]  Mapped "{[/role-add]}" onto public java.lang.String com.drops.controller.MenuController.roleadd(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-02-10 03:27:22  [ restartedMain:27952 ] - [ INFO ]  Mapped "{[/loginOut],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.drops.controller.MenuController.loginOut()
+2020-02-10 03:27:22  [ restartedMain:27952 ] - [ INFO ]  Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-02-10 03:27:22  [ restartedMain:27952 ] - [ INFO ]  Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-02-10 03:27:22  [ restartedMain:28092 ] - [ INFO ]  Mapped URL path [/templates/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-10 03:27:22  [ restartedMain:28092 ] - [ INFO ]  Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-02-10 03:27:22  [ nioEventLoopGroup-3-2:28280 ] - [ INFO ]  0x16a224ac的设备加入群聊Online2
+2020-02-10 03:27:22  [ nioEventLoopGroup-3-2:28280 ] - [ INFO ]  [服务端提醒您:用户[0x16a224ac]已连接
+2020-02-10 03:27:22  [ restartedMain:28295 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6d1c8790: startup date [Mon Feb 10 03:26:54 IRKT 2020]; root of context hierarchy
+2020-02-10 03:27:23  [ nioEventLoopGroup-3-2:28358 ] - [ INFO ]  收到来自用户[crawlerservice-- > 0x16a224ac]消息connect[当前连接数:2]
+2020-02-10 03:27:23  [ restartedMain:28967 ] - [ INFO ]  ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2020-02-10 03:27:24  [ restartedMain:29736 ] - [ WARN ]  Unable to start LiveReload server
+2020-02-10 03:27:24  [ restartedMain:29831 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2020-02-10 03:27:24  [ restartedMain:29878 ] - [ INFO ]  More than one ScheduledExecutorService bean exists within the context, and none is named 'taskScheduler'. Mark one of them as primary or name it 'taskScheduler' (possibly as an alias); or implement the SchedulingConfigurer interface and call ScheduledTaskRegistrar#setScheduler explicitly within the configureTasks() callback: [bossGroup, workerGroup]
+2020-02-10 03:27:24  [ restartedMain:29940 ] - [ INFO ]  Tomcat started on port(s): 9991 (http) with context path ''
+2020-02-10 03:27:24  [ restartedMain:29956 ] - [ INFO ]  Started Application in 31.238 seconds (JVM running for 37.854)
+2020-02-10 03:27:24  [ nioEventLoopGroup-3-3:30081 ] - [ INFO ]  0x6e6699ea的设备加入群聊Online3
+2020-02-10 03:27:24  [ nioEventLoopGroup-4-1:30081 ] - [ ERROR ]  服务端链接成功...
+2020-02-10 03:27:24  [ nioEventLoopGroup-3-3:30081 ] - [ INFO ]  [服务端提醒您:用户[0x6e6699ea]已连接
+2020-02-10 03:27:24  [ nioEventLoopGroup-4-1:30096 ] - [ INFO ]  HeartBeatClientHandler channelActive[当前连接数:1]
+2020-02-10 03:27:24  [ nioEventLoopGroup-4-1:30159 ] - [ INFO ]  收到来自服务端[masterservice0x79c2624c]消息:欢迎加入群聊
+2020-02-10 03:27:24  [ nioEventLoopGroup-3-3:30179 ] - [ INFO ]  收到来自用户[crawlerservice-- > 0x6e6699ea]消息connect[当前连接数:3]
+2020-02-10 03:27:25  [ nioEventLoopGroup-3-1:30585 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x504e3a28]消息192.168.50.182:8888[当前连接数:3]
+2020-02-10 03:27:27  [ nioEventLoopGroup-3-2:32542 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x16a224ac]消息192.168.50.182:7777[当前连接数:3]
+2020-02-10 03:27:29  [ nioEventLoopGroup-3-3:35182 ] - [ INFO ]  收到来自用户[crawlerservice-- > 0x6e6699ea]消息PING...[当前连接数:3]
+2020-02-10 03:27:29  [ nioEventLoopGroup-4-1:35182 ] - [ INFO ]  收到来自服务端[masterservice0x79c2624c]消息:心跳检测 PING...
+2020-02-10 03:27:30  [ nioEventLoopGroup-3-3:35495 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x6e6699ea]消息192.168.50.182:9991-->getway[当前连接数:3]
+2020-02-10 03:27:30  [ nioEventLoopGroup-3-1:35573 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x504e3a28]消息192.168.50.182:8888[当前连接数:3]
+2020-02-10 03:27:32  [ nioEventLoopGroup-3-2:37519 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x16a224ac]消息192.168.50.182:7777[当前连接数:3]
+2020-02-10 03:27:34  [ nioEventLoopGroup-3-3:39897 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x6e6699ea]消息192.168.50.182:9991-->getway[当前连接数:3]
+2020-02-10 03:27:35  [ nioEventLoopGroup-3-1:40584 ] - [ INFO ]  收到来自用户[crawlerservice-- > 0x504e3a28]消息PING...[当前连接数:3]
+2020-02-10 03:27:35  [ nioEventLoopGroup-4-1:40584 ] - [ INFO ]  收到来自服务端[masterservice0x79c2624c]消息:心跳检测 PING...
+2020-02-10 03:27:35  [ nioEventLoopGroup-3-1:40584 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x504e3a28]消息192.168.50.182:8888[当前连接数:3]
+2020-02-10 03:27:37  [ nioEventLoopGroup-3-2:42518 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x16a224ac]消息192.168.50.182:7777[当前连接数:3]
+2020-02-10 03:27:39  [ nioEventLoopGroup-3-3:44903 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x6e6699ea]消息192.168.50.182:9991-->getway[当前连接数:3]
+2020-02-10 03:27:40  [ nioEventLoopGroup-3-1:45586 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x504e3a28]消息192.168.50.182:8888[当前连接数:3]
+2020-02-10 03:27:42  [ nioEventLoopGroup-3-2:47509 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x16a224ac]消息192.168.50.182:7777[当前连接数:3]
+2020-02-10 03:27:44  [ nioEventLoopGroup-3-3:49884 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x6e6699ea]消息192.168.50.182:9991-->getway[当前连接数:3]
+2020-02-10 03:27:45  [ nioEventLoopGroup-3-1:50579 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x504e3a28]消息192.168.50.182:8888[当前连接数:3]
+2020-02-10 03:27:47  [ nioEventLoopGroup-3-2:52514 ] - [ INFO ]  收到来自用户[crawlerservice-- > 0x16a224ac]消息PING...[当前连接数:3]
+2020-02-10 03:27:47  [ nioEventLoopGroup-4-1:52514 ] - [ INFO ]  收到来自服务端[masterservice0x79c2624c]消息:心跳检测 PING...
+2020-02-10 03:27:47  [ nioEventLoopGroup-3-2:52514 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x16a224ac]消息192.168.50.182:7777[当前连接数:3]
+2020-02-10 03:27:49  [ nioEventLoopGroup-3-3:54899 ] - [ INFO ]  收到来自用户[crawlerservice-- > 0x6e6699ea]消息PING...[当前连接数:3]
+2020-02-10 03:27:49  [ nioEventLoopGroup-4-1:54899 ] - [ INFO ]  收到来自服务端[masterservice0x79c2624c]消息:心跳检测 PING...
+2020-02-10 03:27:49  [ nioEventLoopGroup-3-3:54915 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x6e6699ea]消息192.168.50.182:9991-->getway[当前连接数:3]
+2020-02-10 03:27:50  [ nioEventLoopGroup-3-1:55575 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x504e3a28]消息192.168.50.182:8888[当前连接数:3]
+2020-02-10 03:27:52  [ nioEventLoopGroup-3-2:57520 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x16a224ac]消息192.168.50.182:7777[当前连接数:3]
+2020-02-10 03:27:54  [ nioEventLoopGroup-3-3:59908 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x6e6699ea]消息192.168.50.182:9991-->getway[当前连接数:3]
+2020-02-10 03:27:55  [ nioEventLoopGroup-3-1:60580 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x504e3a28]消息192.168.50.182:8888[当前连接数:3]
+2020-02-10 03:27:57  [ nioEventLoopGroup-3-2:62510 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x16a224ac]消息192.168.50.182:7777[当前连接数:3]
+2020-02-10 03:27:59  [ nioEventLoopGroup-3-3:64910 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x6e6699ea]消息192.168.50.182:9991-->getway[当前连接数:3]
+2020-02-10 03:28:00  [ nioEventLoopGroup-3-1:65570 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x504e3a28]消息192.168.50.182:8888[当前连接数:3]
+2020-02-10 03:28:02  [ nioEventLoopGroup-3-2:67521 ] - [ INFO ]  收到来自用户[crawlerservice-- > 0x16a224ac]消息PING...[当前连接数:3]
+2020-02-10 03:28:02  [ nioEventLoopGroup-4-1:67521 ] - [ INFO ]  收到来自服务端[masterservice0x79c2624c]消息:心跳检测 PING...
+2020-02-10 03:28:02  [ nioEventLoopGroup-3-2:67521 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x16a224ac]消息192.168.50.182:7777[当前连接数:3]
+2020-02-10 03:28:04  [ nioEventLoopGroup-3-3:69900 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x6e6699ea]消息192.168.50.182:9991-->getway[当前连接数:3]
+2020-02-10 03:28:05  [ nioEventLoopGroup-3-1:70571 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x504e3a28]消息192.168.50.182:8888[当前连接数:3]
+2020-02-10 03:28:07  [ nioEventLoopGroup-3-2:72538 ] - [ INFO ]  收到来自用户[crawlerservice-- > 0x16a224ac]消息PING...[当前连接数:3]
+2020-02-10 03:28:07  [ nioEventLoopGroup-4-1:72546 ] - [ INFO ]  收到来自服务端[masterservice0x79c2624c]消息:心跳检测 PING...
+2020-02-10 03:28:07  [ nioEventLoopGroup-3-2:72546 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x16a224ac]消息192.168.50.182:7777[当前连接数:3]
+2020-02-10 03:28:09  [ nioEventLoopGroup-3-3:74887 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x6e6699ea]消息192.168.50.182:9991-->getway[当前连接数:3]
+2020-02-10 03:28:10  [ nioEventLoopGroup-3-1:75571 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x504e3a28]消息192.168.50.182:8888[当前连接数:3]
+2020-02-10 03:28:12  [ nioEventLoopGroup-3-2:77513 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x16a224ac]消息192.168.50.182:7777[当前连接数:3]
+2020-02-10 03:28:14  [ nioEventLoopGroup-3-3:79892 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x6e6699ea]消息192.168.50.182:9991-->getway[当前连接数:3]
+2020-02-10 03:28:15  [ nioEventLoopGroup-3-1:80575 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x504e3a28]消息192.168.50.182:8888[当前连接数:3]
+2020-02-10 03:28:17  [ nioEventLoopGroup-3-2:82508 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x16a224ac]消息192.168.50.182:7777[当前连接数:3]
+2020-02-10 03:28:19  [ nioEventLoopGroup-3-3:84890 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x6e6699ea]消息192.168.50.182:9991-->getway[当前连接数:3]
+2020-02-10 03:28:20  [ nioEventLoopGroup-3-1:85594 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x504e3a28]消息192.168.50.182:8888[当前连接数:3]
+2020-02-10 03:28:22  [ nioEventLoopGroup-3-2:87522 ] - [ INFO ]  收到来自用户[crawlerservice-- > 0x16a224ac]消息PING...[当前连接数:3]
+2020-02-10 03:28:22  [ nioEventLoopGroup-4-1:87522 ] - [ INFO ]  收到来自服务端[masterservice0x79c2624c]消息:心跳检测 PING...
+2020-02-10 03:28:22  [ nioEventLoopGroup-3-2:87537 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x16a224ac]消息192.168.50.182:7777[当前连接数:3]
+2020-02-10 03:28:24  [ nioEventLoopGroup-3-3:89898 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x6e6699ea]消息192.168.50.182:9991-->getway[当前连接数:3]
+2020-02-10 03:28:25  [ nioEventLoopGroup-3-1:90571 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x504e3a28]消息192.168.50.182:8888[当前连接数:3]
+2020-02-10 03:28:27  [ nioEventLoopGroup-3-2:92509 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x16a224ac]消息192.168.50.182:7777[当前连接数:3]
+2020-02-10 03:28:29  [ nioEventLoopGroup-3-3:94897 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x6e6699ea]消息192.168.50.182:9991-->getway[当前连接数:3]
+2020-02-10 03:28:30  [ nioEventLoopGroup-3-1:95577 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x504e3a28]消息192.168.50.182:8888[当前连接数:3]
+2020-02-10 03:28:32  [ nioEventLoopGroup-3-2:97538 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x16a224ac]消息192.168.50.182:7777[当前连接数:3]
+2020-02-10 03:28:34  [ nioEventLoopGroup-3-3:99895 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x6e6699ea]消息192.168.50.182:9991-->getway[当前连接数:3]
+2020-02-10 03:28:35  [ nioEventLoopGroup-3-1:100593 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x504e3a28]消息192.168.50.182:8888[当前连接数:3]
+2020-02-10 03:28:37  [ nioEventLoopGroup-3-2:102521 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x16a224ac]消息192.168.50.182:7777[当前连接数:3]
+2020-02-10 03:28:39  [ nioEventLoopGroup-3-3:104902 ] - [ INFO ]  收到来自用户[crawlerservice-- > 0x6e6699ea]消息PING...[当前连接数:3]
+2020-02-10 03:28:39  [ nioEventLoopGroup-4-1:104902 ] - [ INFO ]  收到来自服务端[masterservice0x79c2624c]消息:心跳检测 PING...
+2020-02-10 03:28:39  [ nioEventLoopGroup-3-3:104917 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x6e6699ea]消息192.168.50.182:9991-->getway[当前连接数:3]
+2020-02-10 03:28:40  [ nioEventLoopGroup-3-1:105583 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x504e3a28]消息192.168.50.182:8888[当前连接数:3]
+2020-02-10 03:28:42  [ nioEventLoopGroup-3-2:107517 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x16a224ac]消息192.168.50.182:7777[当前连接数:3]
+2020-02-10 03:28:44  [ nioEventLoopGroup-3-3:109893 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x6e6699ea]消息192.168.50.182:9991-->getway[当前连接数:3]
+2020-02-10 03:28:45  [ nioEventLoopGroup-3-1:110575 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x504e3a28]消息192.168.50.182:8888[当前连接数:3]
+2020-02-10 03:28:47  [ nioEventLoopGroup-3-2:112511 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x16a224ac]消息192.168.50.182:7777[当前连接数:3]
+2020-02-10 03:28:49  [ nioEventLoopGroup-3-3:114890 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x6e6699ea]消息192.168.50.182:9991-->getway[当前连接数:3]
+2020-02-10 03:28:50  [ nioEventLoopGroup-3-1:115582 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x504e3a28]消息192.168.50.182:8888[当前连接数:3]
+2020-02-10 03:28:52  [ nioEventLoopGroup-3-2:117524 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x16a224ac]消息192.168.50.182:7777[当前连接数:3]
+2020-02-10 03:28:54  [ nioEventLoopGroup-3-3:119891 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x6e6699ea]消息192.168.50.182:9991-->getway[当前连接数:3]
+2020-02-10 03:28:55  [ nioEventLoopGroup-3-1:120572 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x504e3a28]消息192.168.50.182:8888[当前连接数:3]
+2020-02-10 03:28:57  [ nioEventLoopGroup-3-2:122513 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x16a224ac]消息192.168.50.182:7777[当前连接数:3]
+2020-02-10 03:28:59  [ nioEventLoopGroup-3-3:124910 ] - [ INFO ]  收到来自用户[crawlerservice-- > 0x6e6699ea]消息PING...[当前连接数:3]
+2020-02-10 03:28:59  [ nioEventLoopGroup-3-3:124910 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x6e6699ea]消息192.168.50.182:9991-->getway[当前连接数:3]
+2020-02-10 03:28:59  [ nioEventLoopGroup-4-1:124910 ] - [ INFO ]  收到来自服务端[masterservice0x79c2624c]消息:心跳检测 PING...
+2020-02-10 03:29:00  [ nioEventLoopGroup-3-1:125581 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x504e3a28]消息192.168.50.182:8888[当前连接数:3]
+2020-02-10 03:29:02  [ nioEventLoopGroup-3-2:127506 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x16a224ac]消息192.168.50.182:7777[当前连接数:3]
+2020-02-10 03:29:04  [ nioEventLoopGroup-3-3:129917 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x6e6699ea]消息192.168.50.182:9991-->getway[当前连接数:3]
+2020-02-10 03:29:05  [ nioEventLoopGroup-3-1:130575 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x504e3a28]消息192.168.50.182:8888[当前连接数:3]
+2020-02-10 03:29:07  [ nioEventLoopGroup-3-2:132516 ] - [ INFO ]  收到来自用户[crawlerservice-- > 0x16a224ac]消息PING...[当前连接数:3]
+2020-02-10 03:29:07  [ nioEventLoopGroup-4-1:132516 ] - [ INFO ]  收到来自服务端[masterservice0x79c2624c]消息:心跳检测 PING...
+2020-02-10 03:29:07  [ nioEventLoopGroup-3-2:132532 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x16a224ac]消息192.168.50.182:7777[当前连接数:3]
+2020-02-10 03:29:09  [ nioEventLoopGroup-3-3:134890 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x6e6699ea]消息192.168.50.182:9991-->getway[当前连接数:3]
+2020-02-10 03:29:10  [ nioEventLoopGroup-3-1:135584 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x504e3a28]消息192.168.50.182:8888[当前连接数:3]
+2020-02-10 03:29:12  [ nioEventLoopGroup-3-2:137518 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x16a224ac]消息192.168.50.182:7777[当前连接数:3]
+2020-02-10 03:29:14  [ nioEventLoopGroup-3-3:139903 ] - [ INFO ]  收到来自用户[crawlerservice-- > 0x6e6699ea]消息PING...[当前连接数:3]
+2020-02-10 03:29:14  [ nioEventLoopGroup-4-1:139903 ] - [ INFO ]  收到来自服务端[masterservice0x79c2624c]消息:心跳检测 PING...
+2020-02-10 03:29:14  [ nioEventLoopGroup-3-3:139903 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x6e6699ea]消息192.168.50.182:9991-->getway[当前连接数:3]
+2020-02-10 03:29:15  [ nioEventLoopGroup-3-1:140584 ] - [ INFO ]  收到来自用户[crawlerservice-- > 0x504e3a28]消息PING...[当前连接数:3]
+2020-02-10 03:29:15  [ nioEventLoopGroup-4-1:140584 ] - [ INFO ]  收到来自服务端[masterservice0x79c2624c]消息:心跳检测 PING...
+2020-02-10 03:29:15  [ nioEventLoopGroup-3-1:140600 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x504e3a28]消息192.168.50.182:8888[当前连接数:3]
+2020-02-10 03:29:17  [ nioEventLoopGroup-3-2:142520 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x16a224ac]消息192.168.50.182:7777[当前连接数:3]
+2020-02-10 03:29:19  [ nioEventLoopGroup-3-3:144919 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x6e6699ea]消息192.168.50.182:9991-->getway[当前连接数:3]
+2020-02-10 03:29:20  [ nioEventLoopGroup-3-1:145577 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x504e3a28]消息192.168.50.182:8888[当前连接数:3]
+2020-02-10 03:29:22  [ nioEventLoopGroup-3-2:147521 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x16a224ac]消息192.168.50.182:7777[当前连接数:3]
+2020-02-10 03:29:24  [ nioEventLoopGroup-3-3:149891 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x6e6699ea]消息192.168.50.182:9991-->getway[当前连接数:3]
+2020-02-10 03:29:25  [ nioEventLoopGroup-3-1:150592 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x504e3a28]消息192.168.50.182:8888[当前连接数:3]
+2020-02-10 03:29:27  [ nioEventLoopGroup-3-2:152520 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x16a224ac]消息192.168.50.182:7777[当前连接数:3]
+2020-02-10 03:29:29  [ nioEventLoopGroup-3-3:154896 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x6e6699ea]消息192.168.50.182:9991-->getway[当前连接数:3]
+2020-02-10 03:29:30  [ nioEventLoopGroup-3-1:155578 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x504e3a28]消息192.168.50.182:8888[当前连接数:3]
+2020-02-10 03:29:32  [ nioEventLoopGroup-3-2:157518 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x16a224ac]消息192.168.50.182:7777[当前连接数:3]
+2020-02-10 03:29:34  [ nioEventLoopGroup-3-3:159904 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x6e6699ea]消息192.168.50.182:9991-->getway[当前连接数:3]
+2020-02-10 03:29:35  [ nioEventLoopGroup-3-1:160592 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x504e3a28]消息192.168.50.182:8888[当前连接数:3]
+2020-02-10 03:29:37  [ nioEventLoopGroup-3-2:162516 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x16a224ac]消息192.168.50.182:7777[当前连接数:3]
+2020-02-10 03:29:39  [ nioEventLoopGroup-3-3:164896 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x6e6699ea]消息192.168.50.182:9991-->getway[当前连接数:3]
+2020-02-10 03:29:40  [ nioEventLoopGroup-3-1:165587 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x504e3a28]消息192.168.50.182:8888[当前连接数:3]
+2020-02-10 03:29:42  [ nioEventLoopGroup-3-2:167538 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x16a224ac]消息192.168.50.182:7777[当前连接数:3]
+2020-02-10 03:29:44  [ nioEventLoopGroup-3-3:169906 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x6e6699ea]消息192.168.50.182:9991-->getway[当前连接数:3]
+2020-02-10 03:29:45  [ nioEventLoopGroup-3-1:170572 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x504e3a28]消息192.168.50.182:8888[当前连接数:3]
+2020-02-10 03:29:47  [ nioEventLoopGroup-3-2:172507 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x16a224ac]消息192.168.50.182:7777[当前连接数:3]
+2020-02-10 03:29:49  [ nioEventLoopGroup-3-3:174891 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x6e6699ea]消息192.168.50.182:9991-->getway[当前连接数:3]
+2020-02-10 03:29:50  [ nioEventLoopGroup-3-1:175579 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x504e3a28]消息192.168.50.182:8888[当前连接数:3]
+2020-02-10 03:29:52  [ nioEventLoopGroup-3-2:177509 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x16a224ac]消息192.168.50.182:7777[当前连接数:3]
+2020-02-10 03:29:54  [ nioEventLoopGroup-3-3:179897 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x6e6699ea]消息192.168.50.182:9991-->getway[当前连接数:3]
+2020-02-10 03:29:55  [ nioEventLoopGroup-3-1:180573 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x504e3a28]消息192.168.50.182:8888[当前连接数:3]
+2020-02-10 03:29:57  [ nioEventLoopGroup-3-2:182518 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x16a224ac]消息192.168.50.182:7777[当前连接数:3]
+2020-02-10 03:29:59  [ nioEventLoopGroup-3-3:184899 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x6e6699ea]消息192.168.50.182:9991-->getway[当前连接数:3]
+2020-02-10 03:30:00  [ nioEventLoopGroup-3-1:185589 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x504e3a28]消息192.168.50.182:8888[当前连接数:3]
+2020-02-10 03:30:02  [ nioEventLoopGroup-3-2:187518 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x16a224ac]消息192.168.50.182:7777[当前连接数:3]
+2020-02-10 03:30:04  [ nioEventLoopGroup-3-3:189919 ] - [ INFO ]  收到来自用户[crawlerservice-- > 0x6e6699ea]消息PING...[当前连接数:3]
+2020-02-10 03:30:04  [ nioEventLoopGroup-4-1:189919 ] - [ INFO ]  收到来自服务端[masterservice0x79c2624c]消息:心跳检测 PING...
+2020-02-10 03:30:04  [ nioEventLoopGroup-3-3:189919 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x6e6699ea]消息192.168.50.182:9991-->getway[当前连接数:3]
+2020-02-10 03:30:05  [ nioEventLoopGroup-3-1:190576 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x504e3a28]消息192.168.50.182:8888[当前连接数:3]
+2020-02-10 03:30:07  [ nioEventLoopGroup-3-2:192508 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x16a224ac]消息192.168.50.182:7777[当前连接数:3]
+2020-02-10 03:30:09  [ nioEventLoopGroup-3-3:194907 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x6e6699ea]消息192.168.50.182:9991-->getway[当前连接数:3]
+2020-02-10 03:30:10  [ nioEventLoopGroup-3-1:195577 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x504e3a28]消息192.168.50.182:8888[当前连接数:3]
+2020-02-10 03:30:12  [ nioEventLoopGroup-3-2:197527 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x16a224ac]消息192.168.50.182:7777[当前连接数:3]
+2020-02-10 03:30:14  [ nioEventLoopGroup-3-3:199891 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x6e6699ea]消息192.168.50.182:9991-->getway[当前连接数:3]
+2020-02-10 03:30:15  [ nioEventLoopGroup-3-1:200582 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x504e3a28]消息192.168.50.182:8888[当前连接数:3]
+2020-02-10 03:30:17  [ nioEventLoopGroup-3-2:202522 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x16a224ac]消息192.168.50.182:7777[当前连接数:3]
+2020-02-10 03:30:19  [ nioEventLoopGroup-3-3:204901 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x6e6699ea]消息192.168.50.182:9991-->getway[当前连接数:3]
+2020-02-10 03:30:20  [ nioEventLoopGroup-3-1:205571 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x504e3a28]消息192.168.50.182:8888[当前连接数:3]
+2020-02-10 03:30:22  [ nioEventLoopGroup-3-2:207535 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x16a224ac]消息192.168.50.182:7777[当前连接数:3]
+2020-02-10 03:30:24  [ nioEventLoopGroup-3-3:209898 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x6e6699ea]消息192.168.50.182:9991-->getway[当前连接数:3]
+2020-02-10 03:30:25  [ nioEventLoopGroup-3-1:210582 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x504e3a28]消息192.168.50.182:8888[当前连接数:3]
+2020-02-10 03:30:27  [ nioEventLoopGroup-3-2:212512 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x16a224ac]消息192.168.50.182:7777[当前连接数:3]
+2020-02-10 03:30:29  [ nioEventLoopGroup-3-3:214900 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x6e6699ea]消息192.168.50.182:9991-->getway[当前连接数:3]
+2020-02-10 03:30:30  [ nioEventLoopGroup-3-1:215572 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x504e3a28]消息192.168.50.182:8888[当前连接数:3]
+2020-02-10 03:30:32  [ nioEventLoopGroup-3-2:217521 ] - [ INFO ]  收到来自用户[crawlerservice-- > 0x16a224ac]消息PING...[当前连接数:3]
+2020-02-10 03:30:32  [ nioEventLoopGroup-4-1:217521 ] - [ INFO ]  收到来自服务端[masterservice0x79c2624c]消息:心跳检测 PING...
+2020-02-10 03:30:32  [ nioEventLoopGroup-3-2:217521 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x16a224ac]消息192.168.50.182:7777[当前连接数:3]
+2020-02-10 03:30:34  [ nioEventLoopGroup-3-3:219894 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x6e6699ea]消息192.168.50.182:9991-->getway[当前连接数:3]
+2020-02-10 03:30:35  [ nioEventLoopGroup-3-1:220581 ] - [ INFO ]  收到来自用户[crawlerservice-- > 0x504e3a28]消息PING...[当前连接数:3]
+2020-02-10 03:30:35  [ nioEventLoopGroup-4-1:220581 ] - [ INFO ]  收到来自服务端[masterservice0x79c2624c]消息:心跳检测 PING...
+2020-02-10 03:30:35  [ nioEventLoopGroup-3-1:220604 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x504e3a28]消息192.168.50.182:8888[当前连接数:3]
+2020-02-10 03:30:37  [ nioEventLoopGroup-3-2:222510 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x16a224ac]消息192.168.50.182:7777[当前连接数:3]
+2020-02-10 03:30:39  [ nioEventLoopGroup-3-3:224891 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x6e6699ea]消息192.168.50.182:9991-->getway[当前连接数:3]
+2020-02-10 03:30:40  [ nioEventLoopGroup-3-1:225571 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x504e3a28]消息192.168.50.182:8888[当前连接数:3]
+2020-02-10 03:30:42  [ nioEventLoopGroup-3-2:227522 ] - [ INFO ]  收到来自用户[crawlerservice-- > 0x16a224ac]消息PING...[当前连接数:3]
+2020-02-10 03:30:42  [ nioEventLoopGroup-4-1:227522 ] - [ INFO ]  收到来自服务端[masterservice0x79c2624c]消息:心跳检测 PING...
+2020-02-10 03:30:42  [ nioEventLoopGroup-3-2:227522 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x16a224ac]消息192.168.50.182:7777[当前连接数:3]
+2020-02-10 03:30:44  [ nioEventLoopGroup-3-3:229904 ] - [ INFO ]  收到来自用户[crawlerservice-- > 0x6e6699ea]消息PING...[当前连接数:3]
+2020-02-10 03:30:44  [ nioEventLoopGroup-4-1:229904 ] - [ INFO ]  收到来自服务端[masterservice0x79c2624c]消息:心跳检测 PING...
+2020-02-10 03:30:44  [ nioEventLoopGroup-3-3:229919 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x6e6699ea]消息192.168.50.182:9991-->getway[当前连接数:3]
+2020-02-10 03:30:45  [ nioEventLoopGroup-3-1:230582 ] - [ INFO ]  收到来自用户[crawlerservice-- > 0x504e3a28]消息PING...[当前连接数:3]
+2020-02-10 03:30:45  [ nioEventLoopGroup-4-1:230582 ] - [ INFO ]  收到来自服务端[masterservice0x79c2624c]消息:心跳检测 PING...
+2020-02-10 03:30:45  [ nioEventLoopGroup-3-1:230582 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x504e3a28]消息192.168.50.182:8888[当前连接数:3]
+2020-02-10 03:30:47  [ nioEventLoopGroup-3-2:232530 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x16a224ac]消息192.168.50.182:7777[当前连接数:3]
+2020-02-10 03:30:49  [ nioEventLoopGroup-3-3:234896 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x6e6699ea]消息192.168.50.182:9991-->getway[当前连接数:3]
+2020-02-10 03:30:50  [ nioEventLoopGroup-3-1:235579 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x504e3a28]消息192.168.50.182:8888[当前连接数:3]
+2020-02-10 03:30:52  [ nioEventLoopGroup-3-2:237510 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x16a224ac]消息192.168.50.182:7777[当前连接数:3]
+2020-02-10 03:30:54  [ nioEventLoopGroup-3-3:239892 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x6e6699ea]消息192.168.50.182:9991-->getway[当前连接数:3]
+2020-02-10 03:30:55  [ nioEventLoopGroup-3-1:240595 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x504e3a28]消息192.168.50.182:8888[当前连接数:3]
+2020-02-10 03:30:57  [ nioEventLoopGroup-3-2:242529 ] - [ INFO ]  收到来自用户[crawlerservice-- > 0x16a224ac]消息PING...[当前连接数:3]
+2020-02-10 03:30:57  [ nioEventLoopGroup-4-1:242529 ] - [ INFO ]  收到来自服务端[masterservice0x79c2624c]消息:心跳检测 PING...
+2020-02-10 03:30:57  [ nioEventLoopGroup-3-2:242529 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x16a224ac]消息192.168.50.182:7777[当前连接数:3]
+2020-02-10 03:30:59  [ nioEventLoopGroup-3-3:244905 ] - [ INFO ]  收到来自用户[crawlerservice-- > 0x6e6699ea]消息PING...[当前连接数:3]
+2020-02-10 03:30:59  [ nioEventLoopGroup-4-1:244905 ] - [ INFO ]  收到来自服务端[masterservice0x79c2624c]消息:心跳检测 PING...
+2020-02-10 03:30:59  [ nioEventLoopGroup-3-3:244905 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x6e6699ea]消息192.168.50.182:9991-->getway[当前连接数:3]
+2020-02-10 03:31:00  [ nioEventLoopGroup-3-1:245573 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x504e3a28]消息192.168.50.182:8888[当前连接数:3]
+2020-02-10 03:31:02  [ nioEventLoopGroup-3-2:247528 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x16a224ac]消息192.168.50.182:7777[当前连接数:3]
+2020-02-10 03:31:04  [ nioEventLoopGroup-3-3:249895 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x6e6699ea]消息192.168.50.182:9991-->getway[当前连接数:3]
+2020-02-10 03:31:05  [ nioEventLoopGroup-3-1:250580 ] - [ INFO ]  收到来自用户[crawlerservice-- > 0x504e3a28]消息PING...[当前连接数:3]
+2020-02-10 03:31:05  [ nioEventLoopGroup-4-1:250580 ] - [ INFO ]  收到来自服务端[masterservice0x79c2624c]消息:心跳检测 PING...
+2020-02-10 03:31:05  [ nioEventLoopGroup-3-1:250596 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x504e3a28]消息192.168.50.182:8888[当前连接数:3]
+2020-02-10 03:31:07  [ nioEventLoopGroup-3-2:252514 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x16a224ac]消息192.168.50.182:7777[当前连接数:3]
+2020-02-10 03:31:09  [ nioEventLoopGroup-3-3:254893 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x6e6699ea]消息192.168.50.182:9991-->getway[当前连接数:3]
+2020-02-10 03:31:10  [ nioEventLoopGroup-3-1:255571 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x504e3a28]消息192.168.50.182:8888[当前连接数:3]
+2020-02-10 03:31:12  [ nioEventLoopGroup-3-2:257510 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x16a224ac]消息192.168.50.182:7777[当前连接数:3]
+2020-02-10 03:31:14  [ nioEventLoopGroup-3-3:259899 ] - [ INFO ]  收到来自用户[crawlerservice-- > 0x6e6699ea]消息PING...[当前连接数:3]
+2020-02-10 03:31:14  [ nioEventLoopGroup-4-1:259899 ] - [ INFO ]  收到来自服务端[masterservice0x79c2624c]消息:心跳检测 PING...
+2020-02-10 03:31:14  [ nioEventLoopGroup-3-3:259915 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x6e6699ea]消息192.168.50.182:9991-->getway[当前连接数:3]
+2020-02-10 03:31:15  [ nioEventLoopGroup-3-1:260571 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x504e3a28]消息192.168.50.182:8888[当前连接数:3]
+2020-02-10 03:31:17  [ nioEventLoopGroup-3-2:262522 ] - [ INFO ]  收到来自用户[crawlerservice-- > 0x16a224ac]消息PING...[当前连接数:3]
+2020-02-10 03:31:17  [ nioEventLoopGroup-4-1:262522 ] - [ INFO ]  收到来自服务端[masterservice0x79c2624c]消息:心跳检测 PING...
+2020-02-10 03:31:17  [ nioEventLoopGroup-3-2:262538 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x16a224ac]消息192.168.50.182:7777[当前连接数:3]
+2020-02-10 03:31:19  [ nioEventLoopGroup-3-3:264899 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x6e6699ea]消息192.168.50.182:9991-->getway[当前连接数:3]
+2020-02-10 03:31:20  [ nioEventLoopGroup-3-1:265571 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x504e3a28]消息192.168.50.182:8888[当前连接数:3]
+2020-02-10 03:31:22  [ nioEventLoopGroup-3-2:267515 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x16a224ac]消息192.168.50.182:7777[当前连接数:3]
+2020-02-10 03:31:24  [ nioEventLoopGroup-3-3:269896 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x6e6699ea]消息192.168.50.182:9991-->getway[当前连接数:3]
+2020-02-10 03:31:25  [ nioEventLoopGroup-3-1:270568 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x504e3a28]消息192.168.50.182:8888[当前连接数:3]
+2020-02-10 03:31:27  [ nioEventLoopGroup-3-2:272514 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0x16a224ac]消息192.168.50.182:7777[当前连接数:3]
+2020-02-10 03:31:27  [ nioEventLoopGroup-3-2:272752 ] - [ INFO ]  0x16a224ac的设备退出群聊Online3
+2020-02-10 03:31:27  [ nioEventLoopGroup-3-2:272752 ] - [ INFO ]  0x16a224ac的设备退出群聊Online2

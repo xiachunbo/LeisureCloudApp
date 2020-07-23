@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>风宇个人博客</title>
+	<style>
+
+		/* music */
+		@-webkit-keyframes reverseRotataZ{
+			0%{-webkit-transform: rotateZ(0deg);}
+			100%{-webkit-transform: rotateZ(-360deg);}
+		}
+		@-webkit-keyframes rotataZ{
+			0%{-webkit-transform: rotateZ(0deg);}
+			100%{-webkit-transform: rotateZ(360deg);}
+		}
+		#musicControl { position:fixed;right:10px;top:20px;margin-top:0;display:inline-block;z-index:99999999}
+		#musicControl a { display:inline-block;width:25px;height:25px;overflow:hidden;background:url('/static/blog/img/logo0.png') no-repeat;background-size:100%;}
+		#musicControl a audio{width:100%;height:56px;}
+		#musicControl a.stop { background-position:left bottom;}
+		#musicControl a.on { background-position:0px 1px;-webkit-animation: reverseRotataZ 1.2s linear infinite;}
+		#music_play_filter{width:100%;height:100%;overflow:hidden;position:fixed;top:0;left:0;z-index:99999998;}
+	</style>
+</head>
+
+<link href="/static/blog/plugin/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/static/blog/css/common.css"/>
+<link rel="stylesheet" type="text/css" href="/static/blog/css/article.css"/>
+<link rel="stylesheet" href="/static/blog/plugin/jquery.page.css">
+<link href="/static/blog/logo.ico" rel="shortcut icon"/>
+<script src="/static/blog/plugin/jquery.min.js"></script>
+<script src="/static/blog/plugin/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/static/blog/plugin/jquery.page.js"></script>
+<script src="/static/blog/js/common.js"></script>
+<!--<script src="js/snowy.js"></script>-->
+<script type="text/javascript">
+	
+$(function(){
+	$("#page").Page({
+	  totalPages: ${page.pages},//分页总数${page.pages}
+	  liNums: 5,//分页的数字按钮数(建议取奇数)
+	  activeClass: 'activP', //active 类样式定义
+	  callBack : function(page){
+          $.ajax({
+              type: "POST",
+              //提交方式
+              url: "blogartcle.do",
+              //路径
+              data: {
+                  "pageNum": page,
+				  "pageSize":3
+              },
+
+              success: function(result) {
+
+              }
+          });
+	  }
+  });
+})
+</script>
+
+<body>
+	<div class="w_header">
+		<div class="container">
+			<div class="w_header_top">
+				<a href="#" class="w_logo"></a>
+				<span class="w_header_nav">
+					<ul>
+						<li><a href="/">首页</a></li>
+						<li><a href="blogabout.html">关于</a></li>
+						<li><a href="blogartcle.html" class="active">成长</a></li>
+						<!--<li><a href="">学习</a></li>
+						<li><a href="">娱乐</a></li>-->
+						<li><a href="blogmoodList.html">说说</a></li>
+						<li><a href="blogcomment.html">留言</a></li>
+					</ul>
+				</span>
+				<div class="w_search">
+					<div class="w_searchbox">
+						<input type="text" placeholder="search" />
+						<button>搜索</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="w_container">
+		<div class="container">
+			<div class="row w_main_row">
+				
+				<ol class="breadcrumb w_breadcrumb">
+				  <li><a href="#">首页</a></li>
+				  <li class="active">文章</li>
+				  <span class="w_navbar_tip">我们长路漫漫，只因学无止境。</span>
+				</ol>
+				
+				<div class="col-lg-9 col-md-9 w_main_left">
+					<div class="panel panel-default">
+					  <div class="panel-body contentList">
+
+						  <#if page??>
+							  <#if page.list??>
+								  <#list page.list as item>
+									  <div class="panel panel-default w_article_item">
+										  <div class="panel-body">
+											  <div class="row">
+												  <div class="col-xs-6 col-md-3">
+													  <a href="#" class="thumbnail w_thumbnail">
+														  <img src="${item.newImages!}" alt="...">
+													  </a>
+												  </div>
+
+												  <h4 class="media-heading">
+													  <a class="title" href="article_detail.html?id=${item.id!}">${item.newsTitle!}</a>
+												  </h4>
+												  <p><a class="label label-default">Nginx</a><a class="label label-default">tomcat负载均衡</a></p>
+												  <p class="w_list_overview overView">${item.newsContent!}</p>
+												  <p class="count_r"><span class="count"><i class="glyphicon glyphicon-user"></i><a href="#">admin</a></span> <span class="count"><i class="glyphicon glyphicon-eye-open"></i>阅读:1003</span><span class="count"><i class="glyphicon glyphicon-comment"></i>评论:2</span><span class="count"><i class="glyphicon glyphicon-time"></i>${(item.newsTime?number_to_datetime)!}</span></p>
+											  </div>
+										  </div>
+									  </div>
+								  </#list>
+								  <#else>
+									  <tr> <p>   抱歉!暂时无数据 </p>  </tr>
+							  </#if>
+						  </#if>
+
+
+					<!--  	<div class="panel panel-default w_article_item">
+						  <div class="panel-body">
+						    <div class="row">
+							  <div class="col-xs-6 col-md-3">
+							    <a href="#" class="thumbnail w_thumbnail">
+							      <img src="img/aticleview.png" alt="...">
+							    </a>
+							  </div>
+							
+							  <h4 class="media-heading">
+							  	<a class="title" href="article_detail.html">Media heading</a>
+							  </h4>
+							  <p><a class="label label-default">Nginx</a><a class="label label-default">tomcat负载均衡</a></p>
+							  <p class="w_list_overview overView">个人博客网站正在建设中。。。。</p>
+							  <p class="count_r"><span class="count"><i class="glyphicon glyphicon-user"></i><a href="#">admin</a></span> <span class="count"><i class="glyphicon glyphicon-eye-open"></i>阅读:1003</span><span class="count"><i class="glyphicon glyphicon-comment"></i>评论:2</span><span class="count"><i class="glyphicon glyphicon-time"></i>2017-01-16</span></p>
+							</div>
+						  </div>
+						</div>
+					  	
+					    <div class="panel panel-default w_article_item">
+						  <div class="panel-body">
+						    <div class="row">
+							  <div class="col-xs-6 col-md-3">
+							    <a href="#" class="thumbnail w_thumbnail">
+							      <img src="img/w.jpg" alt="...">
+							    </a>
+							  </div>
+							  <h4 class="media-heading">
+							  	<a class="title" href="article_detail.html">使用 Nginx 实现 monitor、glassfish 等 web 服务器负载均衡</a>
+							  </h4>
+							  <p><a class="label label-default">Nginx</a><a class="label label-default">tomcat负载均衡</a></p>
+							  <p class="w_list_overview overView">web服务器负载均衡简介web服务器负载均衡是指将多台可用单节点服务器组合成web服务器集群，然后通过负载均衡器将客户端请求均匀的转发到不同的单节点web服务器上，从而增加整个web服务器集群的吞吐量</p>
+							  <p class="count_r"><span class="count"><i class="glyphicon glyphicon-user"></i><a href="#">admin</a></span> <span class="count"><i class="glyphicon glyphicon-eye-open"></i>阅读:1003</span><span class="count"><i class="glyphicon glyphicon-comment"></i>评论:2</span><span class="count"><i class="glyphicon glyphicon-time"></i>2017-01-16</span></p>
+							</div>
+						  </div>
+						</div>
+						
+						<div class="panel panel-default w_article_item">
+						  <div class="panel-body">
+						    <div class="row">
+							  <div class="col-xs-6 col-md-3">
+							    <a href="#" class="thumbnail w_thumbnail">
+							      <img src="img/slider/67zmaej.png" alt="...">
+							    </a>
+							  </div>
+							  <h4 class="media-heading">
+							  	<a class="title" href="article_detail.html">32位的UUID生成方法总结</a>
+							  </h4>
+							  <p><a class="label label-default">Nginx</a><a class="label label-default">tomcat负载均衡</a></p>
+							  <p class="w_list_overview overView">在学习过程中，我们常常会用到ID，在学习过程中，我们常常会用到ID，那么有哪些常用的 ID 生成方式，你知道吗？通过 java.util.UUID（终态类）生成</p>
+							  <p class="count_r"><span class="count"><i class="glyphicon glyphicon-user"></i><a href="#">admin</a></span> <span class="count"><i class="glyphicon glyphicon-eye-open"></i>阅读:1003</span><span class="count"><i class="glyphicon glyphicon-comment"></i>评论:2</span><span class="count"><i class="glyphicon glyphicon-time"></i>2017-01-16</span></p>
+							</div>
+						  </div>
+						</div>
+						
+						<div class="panel panel-default w_article_item">
+						  <div class="panel-body">
+						  	
+						    <div class="row">
+							  <div class="col-xs-6 col-md-3">
+							    <a href="#" class="thumbnail w_thumbnail">
+							      <img src="img/slider/Aj6bieY.jpg" alt="...">
+							    </a>
+							  </div>
+							  
+							  <h4 class="media-heading">
+							  	<a class="title" href="article_detail.html">使用 Nginx 实现 monitor、glassfish 等 web 服务器负载均衡</a>
+							  </h4>
+							  <p><a class="label label-default">Nginx</a><a class="label label-default">tomcat负载均衡</a></p>
+							  <p class="w_list_overview overView">web服务器负载均衡简介web服务器负载均衡是指将多台可用单节点服务器组合成web服务器集群，然后通过负载均衡器将客户端请求均匀的转发到不同的单节点web服务器上，从而增加整个web服务器集群的吞吐量</p>
+							  <p class="count_r"><span class="count"><i class="glyphicon glyphicon-user"></i><a href="#">admin</a></span> <span class="count"><i class="glyphicon glyphicon-eye-open"></i>阅读:1003</span><span class="count"><i class="glyphicon glyphicon-comment"></i>评论:2</span><span class="count"><i class="glyphicon glyphicon-time"></i>2017-01-16</span></p>
+							</div>
+							
+						  </div>
+						</div>
+						
+						
+						
+						<div class="panel panel-default w_article_item">
+							  <div class="panel-body">
+									<div class="row">
+										<div class="col-xs-6 col-md-3">
+										    <a href="#" class="thumbnail w_thumbnail">
+										      <img src="img/aticleview.png" alt="...">
+										    </a>
+										  </div>
+										  
+									    <h4  class="media-heading"><a class="title" href="article_detail.html">排序算法之冒泡排序 － java实现</a></h4>
+									    <p><a class="label label-default">UUID</a><a class="label label-default">java</a></p>
+									    <p class="overView">冒泡排序是非常经典的排序算法，其实现思路非常简单易懂。下面介绍冒泡排序的基本思想、java实现以及时间和空间复杂度等内容。注：以下排序规则为从小到大，待排序数据为int类型。1.冒泡排序基本思想冒泡排序的基本思路是将待排序的数据两两进行比较，如果第一个元素比第二个元素大，那么将第一个元素和第二个元素进行交换。由冒泡排序的...</p>
+									    <p class="count_r"><span class="count"><i class="glyphicon glyphicon-user"></i><a href="#">admin</a></span> <span class="count"><i class="glyphicon glyphicon-eye-open"></i>阅读:666</span><span class="count"><i class="glyphicon glyphicon-comment"></i>评论:18</span><span class="count"><i class="glyphicon glyphicon-time"></i>2016-12-25</span></p>
+									</div>
+							  </div>
+							</div>
+						
+						<div class="panel panel-default w_article_item">
+						  <div class="panel-body">
+						    <div class="row">
+							  <div class="col-xs-6 col-md-3">
+							    <a href="#" class="thumbnail w_thumbnail">
+							      <img src="img/slider/Aj6bieY.jpg" alt="...">
+							    </a>
+							  </div>
+							  <h4 class="media-heading">
+							  	<a class="title" href="article_detail.html">使用 Nginx 实现 monitor、glassfish 等 web 服务器负载均衡</a>
+							  </h4>
+							  <p><a class="label label-default">Nginx</a><a class="label label-default">tomcat负载均衡</a></p>
+							  <p class="w_list_overview overView">web服务器负载均衡简介web服务器负载均衡是指将多台可用单节点服务器组合成web服务器集群，然后通过负载均衡器将客户端请求均匀的转发到不同的单节点web服务器上，从而增加整个web服务器集群的吞吐量</p>
+							  <p class="count_r"><span class="count"><i class="glyphicon glyphicon-user"></i><a href="#">admin</a></span> <span class="count"><i class="glyphicon glyphicon-eye-open"></i>阅读:1003</span><span class="count"><i class="glyphicon glyphicon-comment"></i>评论:2</span><span class="count"><i class="glyphicon glyphicon-time"></i>2017-01-16</span></p>
+							</div>
+						  </div>
+						</div>-->
+						
+						
+						<!--<div class="page">
+							<nav aria-label="Page navigation">
+						  <ul class="pagination">
+						    <li>
+						      <a href="#" aria-label="Previous">
+						        <span aria-hidden="true">&laquo;</span>
+						      </a>
+						    </li>
+						    <li class="active"><a href="#">1</a></li>
+						    <li><a href="#">2</a></li>
+						    <li><a href="#">3</a></li>
+						    <li><a href="#">4</a></li>
+						    <li><a href="#">5</a></li>
+						    <li>
+						      <a href="#" aria-label="Next">
+						        <span aria-hidden="true">&raquo;</span>
+						      </a>
+						    </li>
+						  </ul>
+						</nav>
+						</div>-->
+
+						
+						
+					  </div>
+						<div id="page">
+
+						</div>
+					</div>
+					
+				</div>
+				<div class="col-lg-3 col-md-3 w_main_right">
+					
+					<div class="panel panel-default">
+					  <div class="panel-heading">
+					    <h3 class="panel-title">最新发布</h3>
+					  </div>
+					  <div class="panel-body">
+					    	<ul class="list-unstyled sidebar">
+								<#if page??>
+									<#if page.list??>
+										<#list page.list as item>
+											<li><a href="/post/04928311">${item.newsContent!}</a></li>
+										</#list>
+										<#else>
+											<tr> <p>   抱歉!暂时无数据 </p>  </tr>
+									</#if>
+								</#if>
+						   </ul>
+					  </div>
+					</div>
+					
+					<div class="panel panel-default">
+					  <div class="panel-heading">
+					    <h3 class="panel-title">友情链接</h3>
+					  </div>
+					  <div class="panel-body">
+					    <div class="newContent">
+					    	<ul class="list-unstyled sidebar shiplink">				
+								<li><a href="https://www.baidu.com/" target="_blank">百度</a></li>
+								<li><a href="https://www.oschina.net/" target="_blank">开源中国</a></li>							
+								<li><a href="http://www.ulewo.com/" target="_blank">有乐网</a></li>							
+								<li><a href="http://www.sina.com.cn/" target="_blank">新浪网</a></li>							
+								<li><a href="http://www.qq.com/" target="_blank">腾讯网</a></li>							
+							</ul>
+					    </div>
+					  </div>
+					</div>
+				</div>
+			
+			
+			</div>
+		</div>
+	</div>
+	<div class="w_foot">
+		<!--<div class="w_foot_copyright">© 2015~2016 版权所有 | <a target="_blank" href="http://www.miitbeian.gov.cn/" rel="nofollow">京ICP备15010892号-1</a></div>-->
+		<div class="w_foot_copyright">Copyright © 2017-2020, www.wfyvv.com. All Rights Reserved. </div>
+	</div>
+	<span id="musicControl">
+			<a id="mc_play" class="on" onclick="play_music();">
+				<audio id="musicfx" loop="loop" autoplay="autoplay">
+					<source src="/static/blog/1.mp3" type="audio/mpeg">
+				</audio>
+			</a>
+		 </span>
+	<!--toTop-->
+	<div id="shape">
+		<div class="shapeColor">
+			<div class="shapeFly">
+			</div>
+		</div>
+	</div>
+	<!--snow-->
+	<!--<div class="snow-container"></div>-->
+	<script type="text/javascript">
+        var $backToTopEle = $('<a href="javascript:void(0)" class="Hui-iconfont toTop" title="返回顶部" alt="返回顶部" style="display:none">^</a>').appendTo($("body")).click(function() {
+            $("html, body").animate({ scrollTop: 0 }, 120);
+        });
+        var backToTopFun = function() {
+            var st = $(document).scrollTop(),
+                winh = $(window).height();
+            (st > 0) ? $backToTopEle.show(): $backToTopEle.hide();
+			/*IE6下的定位*/
+            if(!window.XMLHttpRequest) {
+                $backToTopEle.css("top", st + winh - 166);
+            }
+        };
+
+        $(function() {
+            play_music();
+            $(window).on("scroll", backToTopFun);
+            backToTopFun();
+            $('a').click(function(){
+                var href = $(this).attr('href');
+                if(!href || /^(javascript:)|#/.test(href)) return;
+                window.location.href = href;
+                loading();
+                return false;
+            });
+
+            function loading() {
+                //$('body').append('加载中效果');
+            }
+        });
+
+
+        <!-- music -->
+        function play_music(){
+            if ($('#mc_play').hasClass('on')){
+                $('#mc_play audio').get(0).pause();
+                $('#mc_play').attr('class','stop');
+            }else{
+                $('#mc_play audio').get(0).play();
+                $('#mc_play').attr('class','on');
+            }
+            $('#music_play_filter').hide();
+            event.stopPropagation(); //阻止冒泡
+        }
+        function just_play(id){
+            $('#mc_play audio').get(0).play();
+            $('#mc_play').attr('class','on');
+            if (typeof(id)!='undefined'){
+                $('#music_play_filter').hide();
+            }
+            event.stopPropagation(); //阻止冒泡
+        }
+        function is_weixn(){
+            return false;
+            var ua = navigator.userAgent.toLowerCase();
+            if(ua.match(/MicroMessenger/i)=="micromessenger") {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        var play_filter=document.getElementById('music_play_filter');
+        play_filter.addEventListener('click', function(){
+            just_play(1);
+        });
+        play_filter.addEventListener('touchstart', function(){
+            just_play(1);
+        });
+        play_filter.addEventListener('touchend', function(){
+            just_play(1);
+        });
+        play_filter.addEventListener('touchmove', function(){
+            just_play(1);
+        });
+        play_filter.addEventListener('mousedown', function(){
+            just_play(1);
+        });
+        play_filter.addEventListener('mouseup', function(){
+            just_play(1);
+        });
+        play_filter.addEventListener('mousemove',function(){
+            just_play(1);
+        });
+        window.onload=function(){
+            if (!is_weixn()){
+                just_play();
+            }
+        }
+	</script>
+</body>
+</html>
