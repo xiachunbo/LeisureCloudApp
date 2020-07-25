@@ -6,10 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="LeisureCloud-Api" />
-        <module name="LeisureCloud-Master" />
         <module name="LeisureCloud-Web" />
+        <module name="LeisureCloud-Master" />
+        <module name="LeisureCloud-Api" />
       </profile>
     </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="LeisureCloud-Api" options="-parameters" />
+      <module name="LeisureCloud-Master" options="-parameters" />
+      <module name="LeisureCloud-Web" options="-parameters" />
+    </option>
   </component>
 </project>

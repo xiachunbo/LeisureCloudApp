@@ -5,6 +5,8 @@ import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.drops.common.ratelimit.RateLimit;
+import com.drops.config.SpringValue;
+import com.drops.config.SpringValueCacheMap;
 import com.drops.service.GenericService;
 import com.drops.service.HelloService;
 import com.drops.service.TableService;
@@ -13,6 +15,7 @@ import com.drops.tools.YmlUtils;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 
+import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -25,6 +28,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.util.StringUtils;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -218,29 +223,24 @@ public class DataController {
         return null;
     }
 
-
-    @ResponseBody
-    @RequestMapping({"/tests"})
-    public AjaxResult insert() {
-        Map<String, Object> parems = new HashMap<>();
-        this.logger.info("test!");
-        return AjaxResult.success("成功");
-    }
-
-    @ResponseBody
-    @RequestMapping({"/liang"})
-    public AjaxResult liang() {
-        YmlUtils configs = new YmlUtils();
-        try {
-
-            boolean b = configs.updateYaml("liang.aaa", "Intel Core 555555"+Math.random(), "application.yml");
-            System.out.println(b);
-            System.out.println(helloService.hello("1111"));
-        } catch (Exception e) {
-            e.printStackTrace();
+    @GetMapping("/test")
+    public String test(String a) {
+        if (!StringUtils.isEmpty(a)) {
+            try {
+                YmlUtils configs = new YmlUtils();
+                //boolean b = configs.updateYaml("liang.aaa", "Intel Core i7", "application.yml");
+                //System.out.println(configs.getYamlToMap("application.yml"));
+                for (SpringValue springValue : SpringValueCacheMap.map.get("liang.aaa")) {
+                    springValue.update(a);
+                }
+            } catch (IllegalAccessException | InvocationTargetException e) {
+                e.printStackTrace();
+            }
         }
-        Map<String,Object> map = configs.getYamlToMap("application.yml");
-        System.out.println(configs.getValue("liang.aaa",map));
-        return AjaxResult.success("成功");
+        return String.format("test: %s", liang);
+    }
+    @GetMapping("/test1")
+    public String test1() {
+        return String.format("test: %s", liang);
     }
 }
