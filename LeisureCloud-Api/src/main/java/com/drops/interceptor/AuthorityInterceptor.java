@@ -28,6 +28,20 @@ public class AuthorityInterceptor implements HandlerInterceptor {
 
         NOT_INTERCEPT_URI.add("/app/index");
 
+        NOT_INTERCEPT_URI.add("/app/fabu.html");
+
+        NOT_INTERCEPT_URI.add("/app/duanzi.html");
+
+        NOT_INTERCEPT_URI.add("/app/land.html");
+
+        NOT_INTERCEPT_URI.add("/app/pl.html");
+
+        NOT_INTERCEPT_URI.add("/app/search.html");
+
+        NOT_INTERCEPT_URI.add("/app/wuliao.html");
+
+        NOT_INTERCEPT_URI.add("/app/FM.html");
+
         NOT_INTERCEPT_URI.add("/indexForJson");
 
         NOT_INTERCEPT_URI.add("/goHtmlByJson");
