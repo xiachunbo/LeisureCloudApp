@@ -24,8 +24,8 @@ public class SpringValueProcessor implements BeanPostProcessor {
                 if (value != null) {
                     ///Set<String> keys = placeholderHelper.extractPlaceholderKeys(value.value());
                     //for (String key : keys) {
-                        SpringValue springValue = new SpringValue("liang.aaa", value.value(), bean, beanName, field, false);
-                        SpringValueCacheMap.map.put("liang.aaa", springValue);
+                        SpringValue springValue = new SpringValue("test.aaa", value.value(), bean, beanName, field, false);
+                        SpringValueCacheMap.map.put("test.aaa", springValue);
                     //}
                 }
             }

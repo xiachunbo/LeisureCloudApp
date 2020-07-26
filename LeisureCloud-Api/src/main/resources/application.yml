@@ -7,7 +7,7 @@ server:
               timeout: PT5M
 
 master:
-    url: #192.168.50.66:9999
+    url: 192.168.50.183:9999
 
 spring:
     session:
@@ -122,7 +122,7 @@ mybatis:
        call-setters-on-nulls: true
 
 
-liang:
+test:
     aaa:
         111111
 

@@ -16,12 +16,7 @@ import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 
 import java.lang.reflect.InvocationTargetException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -49,7 +44,7 @@ public class DataController {
     @Autowired
     private  HelloService helloService;
 
-    @Value("${liang.aaa}")
+    @Value("${test.aaa}")
     private String liang;
 
     @RateLimit(limitNum = 20.0D)
@@ -228,9 +223,10 @@ public class DataController {
         if (!StringUtils.isEmpty(a)) {
             try {
                 YmlUtils configs = new YmlUtils();
+                Map<String,Object> map = configs.getYamlToMap("application.yml");
                 //boolean b = configs.updateYaml("liang.aaa", "Intel Core i7", "application.yml");
                 //System.out.println(configs.getYamlToMap("application.yml"));
-                for (SpringValue springValue : SpringValueCacheMap.map.get("liang.aaa")) {
+                for (SpringValue springValue : SpringValueCacheMap.map.get("test.aaa")) {
                     springValue.update(a);
                 }
             } catch (IllegalAccessException | InvocationTargetException e) {
