@@ -10,6 +10,8 @@ master:
     url: 192.168.50.183:9999
 
 spring:
+    application:
+        name: api
     session:
         store-type: JDBC
         jdbc:
