@@ -18,7 +18,7 @@ spring:
       static-locations: classpath:/templates/
 
 master:
-    url: 192.168.50.183:9999
+    url: 192.168.50.66:9999
 
 server:
   port: 9991

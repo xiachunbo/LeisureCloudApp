@@ -6,9 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="LeisureCloud-Web" />
-        <module name="LeisureCloud-Master" />
         <module name="LeisureCloud-Api" />
+        <module name="LeisureCloud-Master" />
+        <module name="LeisureCloud-Web" />
       </profile>
     </annotationProcessing>
   </component>
