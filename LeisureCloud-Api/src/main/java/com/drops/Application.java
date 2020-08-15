@@ -5,8 +5,10 @@ import com.drops.service.AsyncThreadService;
 import com.github.pagehelper.PageHelper;
 
 import java.io.File;
+import java.nio.charset.Charset;
 import java.util.Properties;
 
+import com.wgcloud.SigarConfig;
 import org.apache.commons.io.monitor.FileAlterationMonitor;
 import org.apache.commons.io.monitor.FileAlterationObserver;
 import org.mybatis.spring.annotation.MapperScan;
@@ -20,13 +22,18 @@ import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.http.converter.StringHttpMessageConverter;
+import org.springframework.scheduling.TaskScheduler;
 import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.scheduling.annotation.EnableScheduling;
+import org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 @SpringBootApplication(scanBasePackages = {"com.drops"}, exclude = {DataSourceAutoConfiguration.class})
 @MapperScan({"com.drops.mapper.*"})
+@ComponentScan(basePackages = {"com.wgcloud","com.drops"})
 @EnableWebMvc
 @EnableCaching
 @EnableAsync//开启异步
@@ -37,6 +44,8 @@ public class Application
     private RestTemplateBuilder restTemplateBuilider;
     @Autowired
     private AsyncThreadService threadService;
+    @Autowired
+    private SigarConfig sigarConfig;
 
     @Value("${master.url}")
     private String url;
@@ -59,14 +68,27 @@ public class Application
         return pageHelper;
     }
 
+    @Bean
+    public RestTemplate restTemplate() {
+        StringHttpMessageConverter m = new StringHttpMessageConverter(Charset.forName("UTF-8"));
+        RestTemplate restTemplate = new RestTemplateBuilder().additionalMessageConverters(m).build();
+        return restTemplate;
+    }
 
     @Bean
-   public RestTemplate restTemplate() {
-        return this.restTemplateBuilider.build();
+    public TaskScheduler taskScheduler() {
+        ThreadPoolTaskScheduler taskScheduler = new ThreadPoolTaskScheduler();
+        taskScheduler.setPoolSize(10);
+        return taskScheduler;
     }
+    //@Bean
+    //public RestTemplate restTemplate() {
+     //   return this.restTemplateBuilider.build();
+    //}
 
     public void run(String... strings) throws Exception {
         try {
+            sigarConfig.initSigar();
             if(this.url !=null && !"".equals(this.url)){
                 String[] nodes = this.url.split(",");
                 for (String node : nodes) {
