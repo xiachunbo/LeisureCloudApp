@@ -30,7 +30,7 @@ public class AuthRestFilter implements Filter {
     CommonConfig commonConfig;
 
     String[] static_resource = {"/agent/minTask","/agentGo/minTask","login/toLogin","login/login","appInfo/agentList",
-            "/code/get",".css",".js",".jpg",".png",".ico",".gif","font",".eot",".woff",".svg",".ttf",".woff2"};
+            "/code/get",".css",".js",".jpg",".png",".ico",".gif","font",".eot",".woff",".svg",".ttf",".woff2","/goHtmlByJson"};
 
     String[] dash_views = {"/dash/main","/dash/systemInfoList","/dash/detail","/dash/chart"};
 
@@ -63,7 +63,7 @@ public class AuthRestFilter implements Filter {
             }
         }
         if(accountInfo==null){
-            response.sendRedirect("/wgcloud/login/toLogin");
+            response.sendRedirect("/login/toLogin");
             return;
         }
         filterChain.doFilter(servletRequest, servletResponse);

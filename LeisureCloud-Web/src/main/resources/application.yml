@@ -21,7 +21,7 @@ server:
   port: 8082 #service0 占用8082
 
 master:
-    url: 192.168.50.66:9991
+    url: 192.168.50.66:10999
 
 xcloud:
   uploadPath: /Users/xiaobobo/Desktop/upload/

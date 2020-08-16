@@ -41,8 +41,8 @@ public class Application implements CommandLineRunner
 
     @Bean
     public RestTemplate restTemplate() {
-        StringHttpMessageConverter m = new StringHttpMessageConverter(Charset.forName("UTF-8"));
-        RestTemplate restTemplate = new RestTemplateBuilder().additionalMessageConverters(m).build();
+        //StringHttpMessageConverter m = new StringHttpMessageConverter(Charset.forName("UTF-8"));
+        RestTemplate restTemplate = new RestTemplateBuilder().build();
         return restTemplate;
     }
 

@@ -18,6 +18,8 @@ public class AuthorityInterceptor implements HandlerInterceptor {
 
     static {
 
+        NOT_INTERCEPT_URI.add("/");
+
         NOT_INTERCEPT_URI.add("/static/plateform/**");
 
         NOT_INTERCEPT_URI.add("/login");

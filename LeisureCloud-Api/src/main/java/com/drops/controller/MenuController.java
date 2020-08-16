@@ -36,7 +36,7 @@ public class MenuController {
     public Logger logger = Logger.getLogger(MenuController.class);
 
 
-    @RequestMapping({"/login"})
+    @RequestMapping({"/"})
     public String homeHtml(HashMap<String, Object> map) {
         map.put("home", "");
         return "plateform/page_login";

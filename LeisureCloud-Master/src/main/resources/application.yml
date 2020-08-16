@@ -3,7 +3,7 @@ server:
   servlet:
     session:
       timeout: 30m
-    context-path: /wgcloud
+    context-path: /
 # 数据库 相关设置
 spring:
   application:
