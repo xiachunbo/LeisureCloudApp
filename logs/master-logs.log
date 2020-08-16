@@ -17836,3 +17836,319 @@ Caused by: org.thymeleaf.exceptions.TemplateProcessingException: Could not parse
 2020-08-16 11:22:48  [ nioEventLoopGroup-3-2:400442 ] - [ INFO ]  0xfa7d0e41的设备退出数据中心Online1
 2020-08-16 11:23:14  [ nioEventLoopGroup-3-1:426158 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x253e0dce]消息PING...[当前连接数:1]
 2020-08-16 11:23:14  [ nioEventLoopGroup-4-1:426158 ] - [ INFO ]  收到来自服务端[masterservice0x344d8247]消息:心跳检测 PING...
+2020-08-16 11:23:55  [ restartedMain:0 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@33d4d4ae: startup date [Sun Aug 16 11:23:55 CST 2020]; root of context hierarchy
+2020-08-16 11:23:55  [ restartedMain:265 ] - [ INFO ]  Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$bfb71f10] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-16 11:23:55  [ restartedMain:542 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-08-16 11:23:55  [ restartedMain:560 ] - [ INFO ]  Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1ab33ef: startup date [Sun Aug 16 11:23:55 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@33d4d4ae
+2020-08-16 11:23:56  [ restartedMain:0 ] - [ INFO ]  Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@7aaf4794: startup date [Sun Aug 16 11:23:56 CST 2020]; root of context hierarchy
+2020-08-16 11:23:56  [ restartedMain:318 ] - [ INFO ]  Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e0137e0a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-16 11:23:57  [ restartedMain:1869 ] - [ INFO ]  Overriding bean definition for bean 'dataSource' with a different definition: replacing [Root bean: class [null]; scope=refresh; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=false; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari; factoryMethodName=dataSource; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]] with [Root bean: class [org.springframework.aop.scope.ScopedProxyFactoryBean]; scope=; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in BeanDefinition defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]]
+2020-08-16 11:23:57  [ restartedMain:542 ] - [ INFO ]  No active profile set, falling back to default profiles: default
+2020-08-16 11:23:57  [ restartedMain:2000 ] - [ INFO ]  BeanFactory id=f752f9df-cedb-3911-8504-3bb927133e38
+2020-08-16 11:23:57  [ restartedMain:559 ] - [ INFO ]  Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7f0e6420: startup date [Sun Aug 16 11:23:57 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7aaf4794
+2020-08-16 11:23:57  [ restartedMain:2238 ] - [ INFO ]  Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a39d1c13] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-16 11:23:57  [ restartedMain:2276 ] - [ INFO ]  Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$ecaf5231] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-16 11:23:57  [ restartedMain:2309 ] - [ INFO ]  Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$bfb71f10] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-16 11:23:57  [ restartedMain:972 ] - [ WARN ]  No MyBatis mapper was found in '[com.drops.mapper.*]' package. Please check your configuration.
+2020-08-16 11:23:57  [ restartedMain:2672 ] - [ INFO ]  Tomcat initialized with port(s): 10999 (http)
+2020-08-16 11:23:57  [ restartedMain:1262 ] - [ INFO ]  BeanFactory id=5beb1604-b49f-3aeb-9c5b-884b6514a1ec
+2020-08-16 11:23:58  [ localhost-startStop-1:2824 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 2264 ms
+2020-08-16 11:23:58  [ restartedMain:1510 ] - [ INFO ]  Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c3f97b0d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-16 11:23:58  [ restartedMain:1554 ] - [ INFO ]  Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$d0bb12b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-16 11:23:58  [ restartedMain:1615 ] - [ INFO ]  Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$e0137e0a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-08-16 11:23:58  [ localhost-startStop-1:3070 ] - [ INFO ]  Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-08-16 11:23:58  [ localhost-startStop-1:3071 ] - [ INFO ]  Mapping filter: 'tracingFilter' to: [/*]
+2020-08-16 11:23:58  [ localhost-startStop-1:3071 ] - [ INFO ]  Mapping filter: 'exceptionLoggingFilter' to: [/*]
+2020-08-16 11:23:58  [ localhost-startStop-1:3071 ] - [ INFO ]  Mapping filter: 'authRestFilter' to urls: [/*]
+2020-08-16 11:23:58  [ localhost-startStop-1:3071 ] - [ INFO ]  Servlet dispatcherServlet mapped to [/]
+2020-08-16 11:23:58  [ restartedMain:3338 ] - [ INFO ]  Method [void com.zaxxer.hikari.HikariConfig.seal()] is package-visible across different ClassLoaders and cannot get proxied via CGLIB: Declare this method as public or protected if you need to support invocations through the proxy.
+2020-08-16 11:23:58  [ restartedMain:1966 ] - [ INFO ]  Tomcat initialized with port(s): 7777 (http)
+2020-08-16 11:23:58  [ localhost-startStop-1:2123 ] - [ INFO ]  Root WebApplicationContext: initialization completed in 1564 ms
+2020-08-16 11:23:59  [ localhost-startStop-1:2473 ] - [ INFO ]  Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-08-16 11:23:59  [ localhost-startStop-1:2473 ] - [ INFO ]  Mapping filter: 'tracingFilter' to: [/*]
+2020-08-16 11:23:59  [ localhost-startStop-1:2473 ] - [ INFO ]  Mapping filter: 'exceptionLoggingFilter' to: [/*]
+2020-08-16 11:23:59  [ localhost-startStop-1:2474 ] - [ INFO ]  Mapping filter: 'webStatFilter' to urls: [/*]
+2020-08-16 11:23:59  [ localhost-startStop-1:2474 ] - [ INFO ]  Servlet statViewServlet mapped to [/druid/*]
+2020-08-16 11:23:59  [ localhost-startStop-1:2475 ] - [ INFO ]  Servlet dispatcherServlet mapped to [/]
+2020-08-16 11:23:59  [ restartedMain:4325 ] - [ INFO ]  Final method [public final int io.netty.util.concurrent.MultithreadEventExecutorGroup.executorCount()] cannot get proxied via CGLIB: Calls to this method will NOT be routed to the target instance and might lead to NPEs against uninitialized fields in the proxy instance.
+2020-08-16 11:23:59  [ restartedMain:4473 ] - [ INFO ]  Mapped "{[/agent/minTask]}" onto public cn.hutool.json.JSONObject com.wgcloud.controller.AgentController.minTask(java.lang.String)
+2020-08-16 11:23:59  [ restartedMain:4475 ] - [ INFO ]  Mapped "{[/appInfo/del]}" onto public java.lang.String com.wgcloud.controller.AppInfoController.delete(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-08-16 11:23:59  [ restartedMain:4475 ] - [ INFO ]  Mapped "{[/appInfo/agentList]}" onto public java.lang.String com.wgcloud.controller.AppInfoController.agentList(java.lang.String)
+2020-08-16 11:23:59  [ restartedMain:4476 ] - [ INFO ]  Mapped "{[/appInfo/list]}" onto public java.lang.String com.wgcloud.controller.AppInfoController.AppInfoList(com.wgcloud.entity.AppInfo,org.springframework.ui.Model)
+2020-08-16 11:23:59  [ restartedMain:4476 ] - [ INFO ]  Mapped "{[/appInfo/save]}" onto public java.lang.String com.wgcloud.controller.AppInfoController.saveAppInfo(com.wgcloud.entity.AppInfo,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2020-08-16 11:23:59  [ restartedMain:4476 ] - [ INFO ]  Mapped "{[/appInfo/edit]}" onto public java.lang.String com.wgcloud.controller.AppInfoController.edit(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2020-08-16 11:23:59  [ restartedMain:4477 ] - [ INFO ]  Mapped "{[/appInfo/view]}" onto public java.lang.String com.wgcloud.controller.AppInfoController.viewChart(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2020-08-16 11:23:59  [ restartedMain:4477 ] - [ INFO ]  Mapped "{[/code/get]}" onto public void com.wgcloud.controller.CodeController.hostInfoList(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-08-16 11:23:59  [ restartedMain:4478 ] - [ INFO ]  Mapped "{[/common/error/500]}" onto public java.lang.String com.wgcloud.controller.CommonCotroller.to500(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2020-08-16 11:23:59  [ restartedMain:4478 ] - [ INFO ]  Mapped "{[/common/error/404]}" onto public java.lang.String com.wgcloud.controller.CommonCotroller.to404(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2020-08-16 11:23:59  [ restartedMain:4479 ] - [ INFO ]  Mapped "{[/dash/del]}" onto public java.lang.String com.wgcloud.controller.DashboardCotroller.delete(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-08-16 11:23:59  [ restartedMain:4479 ] - [ INFO ]  Mapped "{[/dash/systemInfoList]}" onto public java.lang.String com.wgcloud.controller.DashboardCotroller.systemInfoList(com.wgcloud.entity.SystemInfo,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2020-08-16 11:23:59  [ restartedMain:4480 ] - [ INFO ]  Mapped "{[/dash/main]}" onto public java.lang.String com.wgcloud.controller.DashboardCotroller.mainList(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2020-08-16 11:23:59  [ restartedMain:4480 ] - [ INFO ]  Mapped "{[/dash/detail]}" onto public java.lang.String com.wgcloud.controller.DashboardCotroller.hostDetail(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2020-08-16 11:23:59  [ restartedMain:4480 ] - [ INFO ]  Mapped "{[/dash/chart]}" onto public java.lang.String com.wgcloud.controller.DashboardCotroller.hostChart(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2020-08-16 11:23:59  [ restartedMain:4483 ] - [ INFO ]  Mapped "{[/dbInfo/del]}" onto public java.lang.String com.wgcloud.controller.DbInfoController.delete(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-08-16 11:23:59  [ restartedMain:4483 ] - [ INFO ]  Mapped "{[/dbInfo/edit]}" onto public java.lang.String com.wgcloud.controller.DbInfoController.edit(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2020-08-16 11:23:59  [ restartedMain:4483 ] - [ INFO ]  Mapped "{[/dbInfo/validate]}" onto public java.lang.String com.wgcloud.controller.DbInfoController.valdateDbInfo(com.wgcloud.entity.DbInfo,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2020-08-16 11:23:59  [ restartedMain:4484 ] - [ INFO ]  Mapped "{[/dbInfo/list]}" onto public java.lang.String com.wgcloud.controller.DbInfoController.DbInfoList(com.wgcloud.entity.DbInfo,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2020-08-16 11:23:59  [ restartedMain:4484 ] - [ INFO ]  Mapped "{[/dbInfo/save]}" onto public java.lang.String com.wgcloud.controller.DbInfoController.saveDbInfo(com.wgcloud.entity.DbInfo,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2020-08-16 11:23:59  [ restartedMain:4485 ] - [ INFO ]  Mapped "{[/dbTable/del]}" onto public java.lang.String com.wgcloud.controller.DbTableController.delete(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-08-16 11:23:59  [ restartedMain:4485 ] - [ INFO ]  Mapped "{[/dbTable/list]}" onto public java.lang.String com.wgcloud.controller.DbTableController.DbTableList(com.wgcloud.entity.DbTable,org.springframework.ui.Model)
+2020-08-16 11:23:59  [ restartedMain:4486 ] - [ INFO ]  Mapped "{[/dbTable/save]}" onto public java.lang.String com.wgcloud.controller.DbTableController.saveDbTable(com.wgcloud.entity.DbTable,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2020-08-16 11:23:59  [ restartedMain:4486 ] - [ INFO ]  Mapped "{[/dbTable/edit]}" onto public java.lang.String com.wgcloud.controller.DbTableController.editDbTable(com.wgcloud.entity.DbTable,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2020-08-16 11:23:59  [ restartedMain:4486 ] - [ INFO ]  Mapped "{[/dbTable/viewChart]}" onto public java.lang.String com.wgcloud.controller.DbTableController.viewChartDbTable(com.wgcloud.entity.DbTable,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2020-08-16 11:23:59  [ restartedMain:4487 ] - [ INFO ]  Mapped "{[/dbTableCount/del]}" onto public java.lang.String com.wgcloud.controller.DbTableCountController.delete(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-08-16 11:23:59  [ restartedMain:4488 ] - [ INFO ]  Mapped "{[/dbTableCount/list]}" onto public java.lang.String com.wgcloud.controller.DbTableCountController.dbTableCountList(com.wgcloud.entity.DbTableCount,org.springframework.ui.Model)
+2020-08-16 11:23:59  [ restartedMain:4488 ] - [ INFO ]  Mapped "{[/dbTableCount/save]}" onto public java.lang.String com.wgcloud.controller.DbTableCountController.saveDbTableCount(com.wgcloud.entity.DbTableCount,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2020-08-16 11:23:59  [ restartedMain:4488 ] - [ INFO ]  Mapped "{[/heathMonitor/del]}" onto public java.lang.String com.wgcloud.controller.HeathMonitorController.delete(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-08-16 11:23:59  [ restartedMain:4489 ] - [ INFO ]  Mapped "{[/heathMonitor/view]}" onto public java.lang.String com.wgcloud.controller.HeathMonitorController.view(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2020-08-16 11:23:59  [ restartedMain:4489 ] - [ INFO ]  Mapped "{[/heathMonitor/edit]}" onto public java.lang.String com.wgcloud.controller.HeathMonitorController.edit(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2020-08-16 11:23:59  [ restartedMain:4489 ] - [ INFO ]  Mapped "{[/heathMonitor/list]}" onto public java.lang.String com.wgcloud.controller.HeathMonitorController.heathMonitorList(com.wgcloud.entity.HeathMonitor,org.springframework.ui.Model)
+2020-08-16 11:23:59  [ restartedMain:4490 ] - [ INFO ]  Mapped "{[/heathMonitor/save]}" onto public java.lang.String com.wgcloud.controller.HeathMonitorController.saveHeathMonitor(com.wgcloud.entity.HeathMonitor,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2020-08-16 11:23:59  [ restartedMain:4491 ] - [ INFO ]  Mapped "{[/host/del]}" onto public java.lang.String com.wgcloud.controller.HostInfoController.delete(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-08-16 11:23:59  [ restartedMain:4491 ] - [ INFO ]  Mapped "{[/host/list]}" onto public java.lang.String com.wgcloud.controller.HostInfoController.hostInfoList(com.wgcloud.entity.HostInfo,org.springframework.ui.Model)
+2020-08-16 11:23:59  [ restartedMain:4491 ] - [ INFO ]  Mapped "{[/host/add]}" onto public java.lang.String com.wgcloud.controller.HostInfoController.addHostInfo(com.wgcloud.entity.HostInfo,org.springframework.ui.Model)
+2020-08-16 11:23:59  [ restartedMain:4491 ] - [ INFO ]  Mapped "{[/host/save]}" onto public java.lang.String com.wgcloud.controller.HostInfoController.saveHostInfo(com.wgcloud.entity.HostInfo,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2020-08-16 11:23:59  [ restartedMain:4492 ] - [ INFO ]  Mapped "{[/host/view]}" onto public java.lang.String com.wgcloud.controller.HostInfoController.viewHostInfo(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2020-08-16 11:23:59  [ restartedMain:4492 ] - [ INFO ]  Mapped "{[/log/list]}" onto public java.lang.String com.wgcloud.controller.LogInfoController.LogInfoList(com.wgcloud.entity.LogInfo,org.springframework.ui.Model)
+2020-08-16 11:23:59  [ restartedMain:4493 ] - [ INFO ]  Mapped "{[/log/view]}" onto public java.lang.String com.wgcloud.controller.LogInfoController.viewLogInfo(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2020-08-16 11:23:59  [ restartedMain:4494 ] - [ INFO ]  Mapped "{[/login/toLogin]}" onto public java.lang.String com.wgcloud.controller.LoginCotroller.toLogin(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2020-08-16 11:23:59  [ restartedMain:4494 ] - [ INFO ]  Mapped "{[/login/loginOut]}" onto public java.lang.String com.wgcloud.controller.LoginCotroller.loginOut(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2020-08-16 11:23:59  [ restartedMain:4494 ] - [ INFO ]  Mapped "{[/login/login]}" onto public java.lang.String com.wgcloud.controller.LoginCotroller.login(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2020-08-16 11:23:59  [ restartedMain:4495 ] - [ INFO ]  Mapped "{[/mailset/del]}" onto public java.lang.String com.wgcloud.controller.MailSetController.delete(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2020-08-16 11:23:59  [ restartedMain:4495 ] - [ INFO ]  Mapped "{[/mailset/test]}" onto public java.lang.String com.wgcloud.controller.MailSetController.test(com.wgcloud.entity.MailSet,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2020-08-16 11:23:59  [ restartedMain:4495 ] - [ INFO ]  Mapped "{[/mailset/list]}" onto public java.lang.String com.wgcloud.controller.MailSetController.MailSetList(com.wgcloud.entity.MailSet,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2020-08-16 11:23:59  [ restartedMain:4496 ] - [ INFO ]  Mapped "{[/mailset/save]}" onto public java.lang.String com.wgcloud.controller.MailSetController.saveMailSet(com.wgcloud.entity.MailSet,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2020-08-16 11:23:59  [ restartedMain:4496 ] - [ INFO ]  Mapped "{[/app/index]}" onto public java.lang.String com.drops.controller.AppController.echarts1(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-08-16 11:23:59  [ restartedMain:4497 ] - [ INFO ]  Mapped "{[/insert]}" onto public com.drops.tools.AjaxResult com.drops.controller.DataController.insert(java.lang.String,java.lang.String)
+2020-08-16 11:23:59  [ restartedMain:4497 ] - [ INFO ]  Mapped "{[/tests]}" onto public com.drops.tools.AjaxResult com.drops.controller.DataController.insert()
+2020-08-16 11:23:59  [ restartedMain:4497 ] - [ INFO ]  Mapped "{[/goHtml]}" onto public java.lang.String com.drops.controller.DataController.selectByParem(java.lang.String,java.lang.String,java.lang.String,int,int,org.springframework.ui.Model)
+2020-08-16 11:23:59  [ restartedMain:4497 ] - [ INFO ]  Mapped "{[/updateByParem]}" onto public java.lang.String com.drops.controller.DataController.updateByParem(java.lang.String,java.lang.String,java.lang.String)
+2020-08-16 11:23:59  [ restartedMain:4498 ] - [ INFO ]  Mapped "{[/deleteByParem]}" onto public java.lang.String com.drops.controller.DataController.deleteByParem(java.lang.String,java.lang.String)
+2020-08-16 11:23:59  [ restartedMain:4498 ] - [ INFO ]  Mapped "{[/goServices]}" onto public java.lang.String com.drops.controller.DataController.goServices(java.lang.String,java.lang.String,java.lang.String,int,int,int,org.springframework.ui.Model)
+2020-08-16 11:23:59  [ restartedMain:4498 ] - [ INFO ]  Mapped "{[/goHtmlByJson]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.drops.controller.DataController.goHtmlByJson(java.lang.String,java.lang.String,java.lang.String,int,int,org.springframework.ui.Model)
+2020-08-16 11:23:59  [ restartedMain:4499 ] - [ INFO ]  Mapped "{[/loginOut],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.drops.controller.MenuController.loginOut()
+2020-08-16 11:23:59  [ restartedMain:4500 ] - [ INFO ]  Mapped "{[/loginAjax],methods=[POST],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.drops.controller.MenuController.login(java.lang.String,java.lang.String)
+2020-08-16 11:23:59  [ restartedMain:4500 ] - [ INFO ]  Mapped "{[/html/welcome]}" onto public java.lang.String com.drops.controller.MenuController.welcome(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-08-16 11:23:59  [ restartedMain:4500 ] - [ INFO ]  Mapped "{[/login]}" onto public java.lang.String com.drops.controller.MenuController.homeHtml(java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-08-16 11:23:59  [ restartedMain:4500 ] - [ INFO ]  Mapped "{[/admin-add]}" onto public java.lang.String com.drops.controller.MenuController.adminadd(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-08-16 11:23:59  [ restartedMain:4501 ] - [ INFO ]  Mapped "{[/role-add]}" onto public java.lang.String com.drops.controller.MenuController.roleadd(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-08-16 11:23:59  [ restartedMain:4501 ] - [ INFO ]  Mapped "{[/lyear_pages_edit_pwd]}" onto public java.lang.String com.drops.controller.MenuController.memberpassword(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-08-16 11:23:59  [ restartedMain:4501 ] - [ INFO ]  Mapped "{[/admin-edit]}" onto public java.lang.String com.drops.controller.MenuController.adminedit(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-08-16 11:23:59  [ restartedMain:4501 ] - [ INFO ]  Mapped "{[/index],methods=[GET],produces=[text/html;charset=utf-8]}" onto public java.lang.String com.drops.controller.MenuController.helloHtml(java.lang.String,java.lang.String,java.lang.String,int,int,java.lang.String,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-08-16 11:23:59  [ restartedMain:4503 ] - [ INFO ]  Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-08-16 11:23:59  [ restartedMain:4504 ] - [ INFO ]  Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-08-16 11:23:59  [ restartedMain:4532 ] - [ INFO ]  Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2020-08-16 11:23:59  [ restartedMain:4551 ] - [ INFO ]  Mapped URL path [/templates/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-08-16 11:23:59  [ restartedMain:4551 ] - [ INFO ]  Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-08-16 11:23:59  [ restartedMain:3136 ] - [ INFO ]  Initializing EhCache CacheManager
+2020-08-16 11:23:59  [ restartedMain:4594 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1ab33ef: startup date [Sun Aug 16 11:23:55 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@33d4d4ae
+2020-08-16 11:23:59  [ restartedMain:4644 ] - [ INFO ]  Initializing ExecutorService  'taskScheduler'
+2020-08-16 11:23:59  [ restartedMain:3267 ] - [ INFO ]  Initializing ExecutorService 
+2020-08-16 11:23:59  [ restartedMain:3272 ] - [ INFO ]  Initializing ExecutorService  'taskExecutor'
+2020-08-16 11:24:00  [ restartedMain:4919 ] - [ INFO ]  ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2020-08-16 11:24:00  [ restartedMain:3485 ] - [ INFO ]  Mapped "{[/app/search.html]}" onto public java.lang.String com.drops.controller.AppController.search(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-08-16 11:24:00  [ restartedMain:3486 ] - [ INFO ]  Mapped "{[/app/pl.html]}" onto public java.lang.String com.drops.controller.AppController.pl(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-08-16 11:24:00  [ restartedMain:3486 ] - [ INFO ]  Mapped "{[/app/fabu.html]}" onto public java.lang.String com.drops.controller.AppController.fabu(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-08-16 11:24:00  [ restartedMain:3486 ] - [ INFO ]  Mapped "{[/app/index]}" onto public java.lang.String com.drops.controller.AppController.echarts1(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-08-16 11:24:00  [ restartedMain:3487 ] - [ INFO ]  Mapped "{[/app/duanzi.html]}" onto public java.lang.String com.drops.controller.AppController.duanzi(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-08-16 11:24:00  [ restartedMain:3487 ] - [ INFO ]  Mapped "{[/app/land.html]}" onto public java.lang.String com.drops.controller.AppController.land(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-08-16 11:24:00  [ restartedMain:3487 ] - [ INFO ]  Mapped "{[/app/wuliao.html]}" onto public java.lang.String com.drops.controller.AppController.wuliao(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-08-16 11:24:00  [ restartedMain:3487 ] - [ INFO ]  Mapped "{[/app/FM.html]}" onto public java.lang.String com.drops.controller.AppController.FM(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-08-16 11:24:00  [ restartedMain:3488 ] - [ INFO ]  Mapped "{[/app/insertBean]}" onto public void com.drops.controller.BeanController.insertBean(java.lang.String)
+2020-08-16 11:24:00  [ restartedMain:3488 ] - [ INFO ]  Mapped "{[/app/deleteBean]}" onto public void com.drops.controller.BeanController.deleteBean(java.lang.String)
+2020-08-16 11:24:00  [ restartedMain:3489 ] - [ INFO ]  Mapped "{[/app/findBean]}" onto public java.lang.Object com.drops.controller.BeanController.findBean(java.lang.String)
+2020-08-16 11:24:00  [ restartedMain:3491 ] - [ INFO ]  Mapped "{[/insert]}" onto public com.drops.tools.AjaxResult com.drops.controller.DataController.insert(java.lang.String,java.lang.String)
+2020-08-16 11:24:00  [ restartedMain:3491 ] - [ INFO ]  Mapped "{[/test],methods=[GET]}" onto public java.lang.String com.drops.controller.DataController.test(java.lang.String)
+2020-08-16 11:24:00  [ restartedMain:3491 ] - [ INFO ]  Mapped "{[/goHtml]}" onto public java.lang.String com.drops.controller.DataController.selectByParem(java.lang.String,java.lang.String,java.lang.String,int,int,org.springframework.ui.Model)
+2020-08-16 11:24:00  [ restartedMain:3492 ] - [ INFO ]  Mapped "{[/goHtmlByJson]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.drops.controller.DataController.goHtmlByJson(java.lang.String,java.lang.String,java.lang.String,int,int,org.springframework.ui.Model)
+2020-08-16 11:24:00  [ restartedMain:3492 ] - [ INFO ]  Mapped "{[/updateByParem]}" onto public java.lang.String com.drops.controller.DataController.updateByParem(java.lang.String,java.lang.String,java.lang.String)
+2020-08-16 11:24:00  [ restartedMain:3492 ] - [ INFO ]  Mapped "{[/deleteByParem]}" onto public java.lang.String com.drops.controller.DataController.deleteByParem(java.lang.String,java.lang.String)
+2020-08-16 11:24:00  [ restartedMain:3492 ] - [ INFO ]  Mapped "{[/test1],methods=[GET]}" onto public java.lang.String com.drops.controller.DataController.test1()
+2020-08-16 11:24:00  [ restartedMain:3493 ] - [ INFO ]  Mapped "{[/query],methods=[GET]}" onto public java.util.List<java.util.Map<java.lang.String, java.lang.Object>> com.drops.controller.DruidController.map()
+2020-08-16 11:24:00  [ restartedMain:3494 ] - [ INFO ]  Mapped "{[/echarts1]}" onto public java.lang.String com.drops.controller.EchartController.echarts1(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-08-16 11:24:00  [ restartedMain:3494 ] - [ INFO ]  Mapped "{[/echarts2]}" onto public java.lang.String com.drops.controller.EchartController.echarts2(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-08-16 11:24:00  [ restartedMain:3494 ] - [ INFO ]  Mapped "{[/echarts3]}" onto public java.lang.String com.drops.controller.EchartController.echarts3(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-08-16 11:24:00  [ restartedMain:3494 ] - [ INFO ]  Mapped "{[/echarts4]}" onto public java.lang.String com.drops.controller.EchartController.echarts4(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-08-16 11:24:00  [ restartedMain:3495 ] - [ INFO ]  Mapped "{[/echarts5]}" onto public java.lang.String com.drops.controller.EchartController.echarts5(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-08-16 11:24:00  [ restartedMain:3495 ] - [ INFO ]  Mapped "{[/echarts6]}" onto public java.lang.String com.drops.controller.EchartController.echarts6(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-08-16 11:24:00  [ restartedMain:3495 ] - [ INFO ]  Mapped "{[/echarts7]}" onto public java.lang.String com.drops.controller.EchartController.echarts7(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-08-16 11:24:00  [ restartedMain:3495 ] - [ INFO ]  Mapped "{[/echarts8]}" onto public java.lang.String com.drops.controller.EchartController.echarts8(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-08-16 11:24:00  [ restartedMain:3496 ] - [ INFO ]  Mapped "{[/loginOut],methods=[GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.drops.controller.MenuController.loginOut()
+2020-08-16 11:24:00  [ restartedMain:3497 ] - [ INFO ]  Mapped "{[/role-add]}" onto public java.lang.String com.drops.controller.MenuController.roleadd(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-08-16 11:24:00  [ restartedMain:3497 ] - [ INFO ]  Mapped "{[/loginAjax],methods=[POST],produces=[application/json;charset=utf-8]}" onto public com.drops.tools.AjaxResult com.drops.controller.MenuController.login(java.lang.String,java.lang.String)
+2020-08-16 11:24:00  [ restartedMain:3497 ] - [ INFO ]  Mapped "{[/html/welcome]}" onto public java.lang.String com.drops.controller.MenuController.welcome(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-08-16 11:24:00  [ restartedMain:3497 ] - [ INFO ]  Mapped "{[/admin-add]}" onto public java.lang.String com.drops.controller.MenuController.adminadd(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-08-16 11:24:00  [ restartedMain:3498 ] - [ INFO ]  Mapped "{[/login]}" onto public java.lang.String com.drops.controller.MenuController.homeHtml(java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-08-16 11:24:00  [ restartedMain:3498 ] - [ INFO ]  Mapped "{[/lyear_pages_edit_pwd]}" onto public java.lang.String com.drops.controller.MenuController.memberpassword(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-08-16 11:24:00  [ restartedMain:3498 ] - [ INFO ]  Mapped "{[/admin-edit]}" onto public java.lang.String com.drops.controller.MenuController.adminedit(org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-08-16 11:24:00  [ restartedMain:3498 ] - [ INFO ]  Mapped "{[/indexForJson],methods=[POST || GET],produces=[application/json;charset=utf-8]}" onto public java.lang.String com.drops.controller.MenuController.indexForJson(java.lang.String,java.lang.String,java.lang.String,int,int,java.lang.String,org.springframework.ui.Model,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-08-16 11:24:00  [ restartedMain:3499 ] - [ INFO ]  Mapped "{[/index]}" onto public java.lang.String com.drops.controller.MenuController.helloHtml(java.lang.String,java.lang.String,java.lang.String,int,int,java.lang.String,org.springframework.ui.Model,java.util.HashMap<java.lang.String, java.lang.Object>)
+2020-08-16 11:24:00  [ restartedMain:3499 ] - [ INFO ]  Mapped "{[/checkDataSource]}" onto public java.lang.String com.drops.controller.datasource.DataSourceController.selectByParem(java.lang.String)
+2020-08-16 11:24:00  [ restartedMain:3499 ] - [ INFO ]  Mapped "{[/export_users],methods=[GET]}" onto public void com.drops.controller.excel.ExcelController.exportWorkSchedules(javax.servlet.http.HttpServletResponse) throws java.text.ParseException,java.io.IOException
+2020-08-16 11:24:00  [ restartedMain:3500 ] - [ INFO ]  Mapped "{[/updateJob]}" onto public boolean com.drops.controller.task.TaskController.updateJob()
+2020-08-16 11:24:00  [ restartedMain:3500 ] - [ INFO ]  Mapped "{[/deleteJob]}" onto public boolean com.drops.controller.task.TaskController.deleteJob()
+2020-08-16 11:24:00  [ restartedMain:3500 ] - [ INFO ]  Mapped "{[/addJob]}" onto public java.lang.String com.drops.controller.task.TaskController.addJob()
+2020-08-16 11:24:00  [ restartedMain:3502 ] - [ INFO ]  Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-08-16 11:24:00  [ restartedMain:3502 ] - [ INFO ]  Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-08-16 11:24:00  [ restartedMain:3564 ] - [ INFO ]  Mapped URL path [/templates/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-08-16 11:24:00  [ restartedMain:3565 ] - [ INFO ]  Mapped URL path [/static/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-08-16 11:24:00  [ restartedMain:3608 ] - [ INFO ]  Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7f0e6420: startup date [Sun Aug 16 11:23:57 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7aaf4794
+2020-08-16 11:24:00  [ restartedMain:3654 ] - [ INFO ]  Detected @ExceptionHandler methods in globalControllerExceptionHandler
+2020-08-16 11:24:00  [ restartedMain:3783 ] - [ INFO ]  Initializing ExecutorService  'taskScheduler'
+2020-08-16 11:24:00  [ restartedMain:5275 ] - [ INFO ]  LiveReload server is running on port 35729
+2020-08-16 11:24:00  [ restartedMain:3955 ] - [ INFO ]  SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7f0e6420: startup date [Sun Aug 16 11:23:57 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7aaf4794] and template loader path [classpath:/templates/plateform\ \/]
+2020-08-16 11:24:00  [ restartedMain:3955 ] - [ INFO ]  ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2020-08-16 11:24:00  [ restartedMain:5428 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2020-08-16 11:24:00  [ restartedMain:5429 ] - [ INFO ]  Bean with name 'dataSource' has been autodetected for JMX exposure
+2020-08-16 11:24:00  [ restartedMain:5435 ] - [ INFO ]  Bean with name 'refreshScope' has been autodetected for JMX exposure
+2020-08-16 11:24:00  [ restartedMain:5436 ] - [ INFO ]  Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2020-08-16 11:24:00  [ restartedMain:5436 ] - [ INFO ]  Bean with name 'environmentManager' has been autodetected for JMX exposure
+2020-08-16 11:24:00  [ restartedMain:5439 ] - [ INFO ]  Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2020-08-16 11:24:00  [ restartedMain:5449 ] - [ INFO ]  Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2020-08-16 11:24:00  [ restartedMain:5458 ] - [ INFO ]  Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=1ab33ef,type=ConfigurationPropertiesRebinder]
+2020-08-16 11:24:00  [ restartedMain:5463 ] - [ INFO ]  Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2020-08-16 11:24:00  [ restartedMain:5502 ] - [ INFO ]  Tomcat started on port(s): 10999 (http) with context path '/wgcloud'
+2020-08-16 11:24:00  [ restartedMain:5505 ] - [ INFO ]  Started Application in 5.909 seconds (JVM running for 6.524)
+2020-08-16 11:24:00  [ nioEventLoopGroup-4-1:5536 ] - [ INFO ]  服务端链接成功...
+2020-08-16 11:24:00  [ nioEventLoopGroup-4-1:5541 ] - [ INFO ]  HeartBeatClientHandler channelActive[当前连接数:1]
+2020-08-16 11:24:00  [ nioEventLoopGroup-3-1:5542 ] - [ INFO ]  0x9bb2f372的设备加入数据中心Online1
+2020-08-16 11:24:00  [ nioEventLoopGroup-3-1:5542 ] - [ INFO ]  [服务端提醒您:用户[0x9bb2f372]已连接
+2020-08-16 11:24:00  [ nioEventLoopGroup-4-1:5596 ] - [ INFO ]  收到来自服务端[masterservice0x0a60a90e]消息:欢迎加入数据中心
+2020-08-16 11:24:00  [ nioEventLoopGroup-3-1:5597 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x9bb2f372]消息connect[当前连接数:1]
+2020-08-16 11:24:00  [ restartedMain:4177 ] - [ WARN ]  Unable to start LiveReload server
+2020-08-16 11:24:00  [ restartedMain:4311 ] - [ INFO ]  Registering beans for JMX exposure on startup
+2020-08-16 11:24:00  [ restartedMain:4312 ] - [ INFO ]  Bean with name 'datasource1' has been autodetected for JMX exposure
+2020-08-16 11:24:00  [ restartedMain:4313 ] - [ INFO ]  Bean with name 'datasource2' has been autodetected for JMX exposure
+2020-08-16 11:24:00  [ restartedMain:4313 ] - [ INFO ]  Bean with name 'druid' has been autodetected for JMX exposure
+2020-08-16 11:24:00  [ restartedMain:4319 ] - [ INFO ]  Bean with name 'refreshScope' has been autodetected for JMX exposure
+2020-08-16 11:24:00  [ restartedMain:4320 ] - [ INFO ]  Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2020-08-16 11:24:00  [ restartedMain:4320 ] - [ INFO ]  Bean with name 'environmentManager' has been autodetected for JMX exposure
+2020-08-16 11:24:00  [ restartedMain:4322 ] - [ INFO ]  Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2020-08-16 11:24:00  [ restartedMain:4331 ] - [ INFO ]  Located MBean 'druid': registering with JMX server as MBean [com.alibaba.druid.pool:name=druid,type=DruidDataSource]
+2020-08-16 11:24:00  [ restartedMain:4332 ] - [ INFO ]  Located MBean 'datasource1': registering with JMX server as MBean [com.zaxxer.hikari:name=datasource1,type=HikariDataSource]
+2020-08-16 11:24:00  [ restartedMain:4333 ] - [ INFO ]  Located MBean 'datasource2': registering with JMX server as MBean [com.zaxxer.hikari:name=datasource2,type=HikariDataSource]
+2020-08-16 11:24:00  [ restartedMain:4335 ] - [ INFO ]  Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2020-08-16 11:24:01  [ restartedMain:4342 ] - [ INFO ]  Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=7f0e6420,type=ConfigurationPropertiesRebinder]
+2020-08-16 11:24:01  [ restartedMain:4391 ] - [ INFO ]  Tomcat started on port(s): 7777 (http) with context path ''
+2020-08-16 11:24:01  [ restartedMain:4394 ] - [ INFO ]  Started Application in 4.686 seconds (JVM running for 5.218)
+2020-08-16 11:24:01  [ nioEventLoopGroup-3-2:5916 ] - [ INFO ]  0xb2cd5e3a的设备加入数据中心Online2
+2020-08-16 11:24:01  [ nioEventLoopGroup-3-2:5917 ] - [ INFO ]  [服务端提醒您:用户[0xb2cd5e3a]已连接
+2020-08-16 11:24:01  [ nioEventLoopGroup-2-1:4468 ] - [ INFO ]  服务端链接成功...
+2020-08-16 11:24:01  [ nioEventLoopGroup-2-1:4470 ] - [ INFO ]  HeartBeatClientHandler channelActive[当前连接数:1]
+2020-08-16 11:24:01  [ nioEventLoopGroup-2-1:4496 ] - [ INFO ]  收到来自服务端[masterservice0x293a386b]消息:欢迎加入数据中心
+2020-08-16 11:24:01  [ nioEventLoopGroup-3-2:5951 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0xb2cd5e3a]消息connect[当前连接数:2]
+2020-08-16 11:24:05  [ nioEventLoopGroup-3-1:10491 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x9bb2f372]消息192.168.50.66:10999-->getway[当前连接数:2]
+2020-08-16 11:24:06  [ nioEventLoopGroup-3-2:10816 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0xb2cd5e3a]消息192.168.50.66:7777[当前连接数:2]
+2020-08-16 11:24:07  [ http-nio-7777-exec-1:11051 ] - [ INFO ]  FrameworkServlet 'dispatcherServlet': initialization started
+2020-08-16 11:24:07  [ http-nio-7777-exec-1:11075 ] - [ INFO ]  FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+2020-08-16 11:24:10  [ nioEventLoopGroup-3-1:15492 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x9bb2f372]消息192.168.50.66:10999-->getway[当前连接数:2]
+2020-08-16 11:24:11  [ nioEventLoopGroup-3-2:15822 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0xb2cd5e3a]消息192.168.50.66:7777[当前连接数:2]
+2020-08-16 11:24:15  [ nioEventLoopGroup-3-1:20491 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x9bb2f372]消息192.168.50.66:10999-->getway[当前连接数:2]
+2020-08-16 11:24:16  [ nioEventLoopGroup-3-2:20821 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0xb2cd5e3a]消息192.168.50.66:7777[当前连接数:2]
+2020-08-16 11:24:20  [ nioEventLoopGroup-3-1:25499 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x9bb2f372]消息192.168.50.66:10999-->getway[当前连接数:2]
+2020-08-16 11:24:21  [ nioEventLoopGroup-3-2:25822 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0xb2cd5e3a]消息192.168.50.66:7777[当前连接数:2]
+2020-08-16 11:24:25  [ nioEventLoopGroup-3-1:30494 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x9bb2f372]消息192.168.50.66:10999-->getway[当前连接数:2]
+2020-08-16 11:24:26  [ nioEventLoopGroup-3-2:30822 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0xb2cd5e3a]消息192.168.50.66:7777[当前连接数:2]
+2020-08-16 11:24:29  [ http-nio-10999-exec-1:33869 ] - [ INFO ]  FrameworkServlet 'dispatcherServlet': initialization started
+2020-08-16 11:24:29  [ http-nio-10999-exec-1:33889 ] - [ INFO ]  FrameworkServlet 'dispatcherServlet': initialization completed in 20 ms
+2020-08-16 11:24:30  [ nioEventLoopGroup-3-1:35492 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x9bb2f372]消息192.168.50.66:10999-->getway[当前连接数:2]
+2020-08-16 11:24:30  [ nioEventLoopGroup-3-1:35599 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x9bb2f372]消息PING...[当前连接数:2]
+2020-08-16 11:24:30  [ nioEventLoopGroup-4-1:35599 ] - [ INFO ]  收到来自服务端[masterservice0x0a60a90e]消息:心跳检测 PING...
+2020-08-16 11:24:31  [ nioEventLoopGroup-3-2:35822 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0xb2cd5e3a]消息192.168.50.66:7777[当前连接数:2]
+2020-08-16 11:24:31  [ nioEventLoopGroup-3-2:35950 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0xb2cd5e3a]消息PING...[当前连接数:2]
+2020-08-16 11:24:31  [ nioEventLoopGroup-2-1:34507 ] - [ INFO ]  收到来自服务端[masterservice0x293a386b]消息:心跳检测 PING...
+2020-08-16 11:24:35  [ nioEventLoopGroup-3-1:40489 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x9bb2f372]消息192.168.50.66:10999-->getway[当前连接数:2]
+2020-08-16 11:24:36  [ nioEventLoopGroup-3-2:40818 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0xb2cd5e3a]消息192.168.50.66:7777[当前连接数:2]
+2020-08-16 11:24:40  [ nioEventLoopGroup-3-1:45491 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x9bb2f372]消息192.168.50.66:10999-->getway[当前连接数:2]
+2020-08-16 11:24:41  [ nioEventLoopGroup-3-2:45823 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0xb2cd5e3a]消息192.168.50.66:7777[当前连接数:2]
+2020-08-16 11:24:45  [ nioEventLoopGroup-3-1:50494 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x9bb2f372]消息192.168.50.66:10999-->getway[当前连接数:2]
+2020-08-16 11:24:46  [ nioEventLoopGroup-3-2:50817 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0xb2cd5e3a]消息192.168.50.66:7777[当前连接数:2]
+2020-08-16 11:24:50  [ nioEventLoopGroup-3-1:55493 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x9bb2f372]消息192.168.50.66:10999-->getway[当前连接数:2]
+2020-08-16 11:24:51  [ nioEventLoopGroup-3-2:55822 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0xb2cd5e3a]消息192.168.50.66:7777[当前连接数:2]
+2020-08-16 11:24:55  [ nioEventLoopGroup-3-1:60493 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x9bb2f372]消息192.168.50.66:10999-->getway[当前连接数:2]
+2020-08-16 11:24:56  [ nioEventLoopGroup-3-2:60819 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0xb2cd5e3a]消息192.168.50.66:7777[当前连接数:2]
+2020-08-16 11:25:00  [ nioEventLoopGroup-3-1:65491 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x9bb2f372]消息192.168.50.66:10999-->getway[当前连接数:2]
+2020-08-16 11:25:00  [ nioEventLoopGroup-3-1:65603 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x9bb2f372]消息PING...[当前连接数:2]
+2020-08-16 11:25:00  [ nioEventLoopGroup-4-1:65604 ] - [ INFO ]  收到来自服务端[masterservice0x0a60a90e]消息:心跳检测 PING...
+2020-08-16 11:25:01  [ nioEventLoopGroup-3-2:65821 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0xb2cd5e3a]消息192.168.50.66:7777[当前连接数:2]
+2020-08-16 11:25:01  [ nioEventLoopGroup-3-2:65959 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0xb2cd5e3a]消息PING...[当前连接数:2]
+2020-08-16 11:25:01  [ nioEventLoopGroup-2-1:64510 ] - [ INFO ]  收到来自服务端[masterservice0x293a386b]消息:心跳检测 PING...
+2020-08-16 11:25:05  [ nioEventLoopGroup-3-1:70492 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x9bb2f372]消息192.168.50.66:10999-->getway[当前连接数:2]
+2020-08-16 11:25:06  [ nioEventLoopGroup-3-2:70816 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0xb2cd5e3a]消息192.168.50.66:7777[当前连接数:2]
+2020-08-16 11:25:10  [ nioEventLoopGroup-3-1:75493 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x9bb2f372]消息192.168.50.66:10999-->getway[当前连接数:2]
+2020-08-16 11:25:11  [ nioEventLoopGroup-3-2:75822 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0xb2cd5e3a]消息192.168.50.66:7777[当前连接数:2]
+2020-08-16 11:25:15  [ nioEventLoopGroup-3-1:80490 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x9bb2f372]消息192.168.50.66:10999-->getway[当前连接数:2]
+2020-08-16 11:25:16  [ nioEventLoopGroup-3-2:80819 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0xb2cd5e3a]消息192.168.50.66:7777[当前连接数:2]
+2020-08-16 11:25:20  [ nioEventLoopGroup-3-1:85502 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x9bb2f372]消息192.168.50.66:10999-->getway[当前连接数:2]
+2020-08-16 11:25:21  [ nioEventLoopGroup-3-2:85818 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0xb2cd5e3a]消息192.168.50.66:7777[当前连接数:2]
+2020-08-16 11:25:25  [ nioEventLoopGroup-3-1:90490 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x9bb2f372]消息192.168.50.66:10999-->getway[当前连接数:2]
+2020-08-16 11:25:26  [ nioEventLoopGroup-3-2:90819 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0xb2cd5e3a]消息192.168.50.66:7777[当前连接数:2]
+2020-08-16 11:25:30  [ nioEventLoopGroup-3-1:95493 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x9bb2f372]消息192.168.50.66:10999-->getway[当前连接数:2]
+2020-08-16 11:25:30  [ nioEventLoopGroup-3-1:95608 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x9bb2f372]消息PING...[当前连接数:2]
+2020-08-16 11:25:30  [ nioEventLoopGroup-4-1:95608 ] - [ INFO ]  收到来自服务端[masterservice0x0a60a90e]消息:心跳检测 PING...
+2020-08-16 11:25:31  [ nioEventLoopGroup-3-2:95820 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0xb2cd5e3a]消息192.168.50.66:7777[当前连接数:2]
+2020-08-16 11:25:31  [ nioEventLoopGroup-3-2:95962 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0xb2cd5e3a]消息PING...[当前连接数:2]
+2020-08-16 11:25:31  [ nioEventLoopGroup-2-1:94512 ] - [ INFO ]  收到来自服务端[masterservice0x293a386b]消息:心跳检测 PING...
+2020-08-16 11:25:35  [ nioEventLoopGroup-3-1:100494 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x9bb2f372]消息192.168.50.66:10999-->getway[当前连接数:2]
+2020-08-16 11:25:36  [ nioEventLoopGroup-3-2:100822 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0xb2cd5e3a]消息192.168.50.66:7777[当前连接数:2]
+2020-08-16 11:25:40  [ nioEventLoopGroup-3-1:105488 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x9bb2f372]消息192.168.50.66:10999-->getway[当前连接数:2]
+2020-08-16 11:25:41  [ nioEventLoopGroup-3-2:105819 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0xb2cd5e3a]消息192.168.50.66:7777[当前连接数:2]
+2020-08-16 11:25:45  [ nioEventLoopGroup-3-1:110491 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x9bb2f372]消息192.168.50.66:10999-->getway[当前连接数:2]
+2020-08-16 11:25:46  [ nioEventLoopGroup-3-2:110821 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0xb2cd5e3a]消息192.168.50.66:7777[当前连接数:2]
+2020-08-16 11:25:50  [ nioEventLoopGroup-3-1:115491 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x9bb2f372]消息192.168.50.66:10999-->getway[当前连接数:2]
+2020-08-16 11:25:51  [ nioEventLoopGroup-3-2:115815 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0xb2cd5e3a]消息192.168.50.66:7777[当前连接数:2]
+2020-08-16 11:25:55  [ nioEventLoopGroup-3-1:120493 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x9bb2f372]消息192.168.50.66:10999-->getway[当前连接数:2]
+2020-08-16 11:25:56  [ nioEventLoopGroup-3-2:120820 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0xb2cd5e3a]消息192.168.50.66:7777[当前连接数:2]
+2020-08-16 11:26:00  [ nioEventLoopGroup-3-1:125487 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x9bb2f372]消息192.168.50.66:10999-->getway[当前连接数:2]
+2020-08-16 11:26:00  [ nioEventLoopGroup-3-1:125610 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x9bb2f372]消息PING...[当前连接数:2]
+2020-08-16 11:26:00  [ nioEventLoopGroup-4-1:125610 ] - [ INFO ]  收到来自服务端[masterservice0x0a60a90e]消息:心跳检测 PING...
+2020-08-16 11:26:01  [ nioEventLoopGroup-3-2:125821 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0xb2cd5e3a]消息192.168.50.66:7777[当前连接数:2]
+2020-08-16 11:26:01  [ nioEventLoopGroup-3-2:125966 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0xb2cd5e3a]消息PING...[当前连接数:2]
+2020-08-16 11:26:01  [ nioEventLoopGroup-2-1:124517 ] - [ INFO ]  收到来自服务端[masterservice0x293a386b]消息:心跳检测 PING...
+2020-08-16 11:26:05  [ nioEventLoopGroup-3-1:130491 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x9bb2f372]消息192.168.50.66:10999-->getway[当前连接数:2]
+2020-08-16 11:26:06  [ nioEventLoopGroup-3-2:130817 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0xb2cd5e3a]消息192.168.50.66:7777[当前连接数:2]
+2020-08-16 11:26:10  [ nioEventLoopGroup-3-1:135497 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x9bb2f372]消息192.168.50.66:10999-->getway[当前连接数:2]
+2020-08-16 11:26:11  [ nioEventLoopGroup-3-2:135819 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0xb2cd5e3a]消息192.168.50.66:7777[当前连接数:2]
+2020-08-16 11:26:15  [ nioEventLoopGroup-3-1:140488 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x9bb2f372]消息192.168.50.66:10999-->getway[当前连接数:2]
+2020-08-16 11:26:16  [ nioEventLoopGroup-3-2:140817 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0xb2cd5e3a]消息192.168.50.66:7777[当前连接数:2]
+2020-08-16 11:26:20  [ nioEventLoopGroup-3-1:145490 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x9bb2f372]消息192.168.50.66:10999-->getway[当前连接数:2]
+2020-08-16 11:26:21  [ nioEventLoopGroup-3-2:145817 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0xb2cd5e3a]消息192.168.50.66:7777[当前连接数:2]
+2020-08-16 11:26:25  [ nioEventLoopGroup-3-1:150491 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x9bb2f372]消息192.168.50.66:10999-->getway[当前连接数:2]
+2020-08-16 11:26:26  [ nioEventLoopGroup-3-2:150818 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0xb2cd5e3a]消息192.168.50.66:7777[当前连接数:2]
+2020-08-16 11:26:30  [ nioEventLoopGroup-3-1:155491 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x9bb2f372]消息192.168.50.66:10999-->getway[当前连接数:2]
+2020-08-16 11:26:30  [ nioEventLoopGroup-3-1:155613 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x9bb2f372]消息PING...[当前连接数:2]
+2020-08-16 11:26:30  [ nioEventLoopGroup-4-1:155613 ] - [ INFO ]  收到来自服务端[masterservice0x0a60a90e]消息:心跳检测 PING...
+2020-08-16 11:26:31  [ nioEventLoopGroup-3-2:155821 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0xb2cd5e3a]消息192.168.50.66:7777[当前连接数:2]
+2020-08-16 11:26:31  [ nioEventLoopGroup-3-2:155967 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0xb2cd5e3a]消息PING...[当前连接数:2]
+2020-08-16 11:26:31  [ nioEventLoopGroup-2-1:154518 ] - [ INFO ]  收到来自服务端[masterservice0x293a386b]消息:心跳检测 PING...
+2020-08-16 11:26:35  [ nioEventLoopGroup-3-1:160487 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x9bb2f372]消息192.168.50.66:10999-->getway[当前连接数:2]
+2020-08-16 11:26:36  [ nioEventLoopGroup-3-2:160822 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0xb2cd5e3a]消息192.168.50.66:7777[当前连接数:2]
+2020-08-16 11:26:40  [ nioEventLoopGroup-3-1:165500 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x9bb2f372]消息192.168.50.66:10999-->getway[当前连接数:2]
+2020-08-16 11:26:41  [ nioEventLoopGroup-3-2:165821 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0xb2cd5e3a]消息192.168.50.66:7777[当前连接数:2]
+2020-08-16 11:26:45  [ nioEventLoopGroup-3-1:170489 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x9bb2f372]消息192.168.50.66:10999-->getway[当前连接数:2]
+2020-08-16 11:26:46  [ nioEventLoopGroup-3-2:170819 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0xb2cd5e3a]消息192.168.50.66:7777[当前连接数:2]
+2020-08-16 11:26:50  [ nioEventLoopGroup-3-1:175490 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x9bb2f372]消息192.168.50.66:10999-->getway[当前连接数:2]
+2020-08-16 11:26:51  [ nioEventLoopGroup-3-2:175822 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0xb2cd5e3a]消息192.168.50.66:7777[当前连接数:2]
+2020-08-16 11:26:55  [ nioEventLoopGroup-3-1:180485 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x9bb2f372]消息192.168.50.66:10999-->getway[当前连接数:2]
+2020-08-16 11:26:56  [ nioEventLoopGroup-3-2:180815 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0xb2cd5e3a]消息192.168.50.66:7777[当前连接数:2]
+2020-08-16 11:27:00  [ nioEventLoopGroup-3-1:185493 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x9bb2f372]消息192.168.50.66:10999-->getway[当前连接数:2]
+2020-08-16 11:27:00  [ nioEventLoopGroup-3-1:185618 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x9bb2f372]消息PING...[当前连接数:2]
+2020-08-16 11:27:00  [ nioEventLoopGroup-4-1:185618 ] - [ INFO ]  收到来自服务端[masterservice0x0a60a90e]消息:心跳检测 PING...
+2020-08-16 11:27:01  [ nioEventLoopGroup-3-2:185816 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0xb2cd5e3a]消息192.168.50.66:7777[当前连接数:2]
+2020-08-16 11:27:01  [ nioEventLoopGroup-3-2:185970 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0xb2cd5e3a]消息PING...[当前连接数:2]
+2020-08-16 11:27:01  [ nioEventLoopGroup-2-1:184521 ] - [ INFO ]  收到来自服务端[masterservice0x293a386b]消息:心跳检测 PING...
+2020-08-16 11:27:05  [ nioEventLoopGroup-3-1:190492 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x9bb2f372]消息192.168.50.66:10999-->getway[当前连接数:2]
+2020-08-16 11:27:06  [ nioEventLoopGroup-3-2:190820 ] - [ INFO ]  收到来自用户[LeisureCloud-Api-- > 0xb2cd5e3a]消息192.168.50.66:7777[当前连接数:2]
+2020-08-16 11:27:06  [ Thread-24:191423 ] - [ INFO ]  Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1ab33ef: startup date [Sun Aug 16 11:23:55 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@33d4d4ae
+2020-08-16 11:27:06  [ Thread-24:191426 ] - [ INFO ]  Unregistering JMX-exposed beans on shutdown
+2020-08-16 11:27:06  [ Thread-24:191426 ] - [ INFO ]  Unregistering JMX-exposed beans
+2020-08-16 11:27:06  [ Thread-24:191427 ] - [ INFO ]  Shutting down ExecutorService 'taskScheduler'
+2020-08-16 11:27:06  [ Thread-21:189995 ] - [ INFO ]  Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7f0e6420: startup date [Sun Aug 16 11:23:57 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7aaf4794
+2020-08-16 11:27:06  [ Thread-21:189998 ] - [ INFO ]  Unregistering JMX-exposed beans on shutdown
+2020-08-16 11:27:06  [ Thread-21:189999 ] - [ INFO ]  Unregistering JMX-exposed beans
+2020-08-16 11:27:06  [ Thread-21:189999 ] - [ INFO ]  Shutting down ExecutorService 'taskScheduler'
+2020-08-16 11:27:06  [ Thread-21:190000 ] - [ INFO ]  Shutting down ExecutorService 'taskExecutor'
+2020-08-16 11:27:06  [ Thread-21:190000 ] - [ INFO ]  Shutting down EhCache CacheManager
+2020-08-16 11:27:07  [ nioEventLoopGroup-3-2:191895 ] - [ INFO ]  0xb2cd5e3a的设备退出数据中心Online1
+2020-08-16 11:27:30  [ nioEventLoopGroup-3-1:215619 ] - [ INFO ]  收到来自用户[LeisureCloud-Proxy-- > 0x9bb2f372]消息PING...[当前连接数:1]
+2020-08-16 11:27:30  [ nioEventLoopGroup-4-1:215619 ] - [ INFO ]  收到来自服务端[masterservice0x0a60a90e]消息:心跳检测 PING...
