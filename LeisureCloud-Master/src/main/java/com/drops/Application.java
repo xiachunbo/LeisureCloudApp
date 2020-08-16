@@ -57,8 +57,17 @@ public class Application implements CommandLineRunner
         try {
             String[] nodes = this.url.split(",");
             for (String node : nodes) {
-                NettyClient nettyClient = new NettyClient(node.split(":")[0], Integer.parseInt(node.split(":")[1]));
-                nettyClient.connect();
+                new Thread(new Runnable() {
+                    @Override
+                    public void run() {
+                        NettyClient nettyClient = new NettyClient(node.split(":")[0], Integer.parseInt(node.split(":")[1]));
+                        try {
+                            nettyClient.connect();
+                        } catch (Exception e) {
+                            //e.printStackTrace();
+                        }
+                    }
+                }).start();
                 System.out.println("链接建立完成");
             }
         }
