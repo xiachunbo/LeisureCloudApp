@@ -1,9 +1,5 @@
 package com.drops;
 
-import java.nio.charset.Charset;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-
 import com.drops.nettyclient.NettyClient;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,7 +7,6 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.cache.annotation.EnableCaching;
@@ -24,6 +19,7 @@ import org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
+import java.nio.charset.Charset;
 
 @SpringBootApplication
 @MapperScan({"com.drops.mapper.*","com.wgcloud.mapper"})
@@ -32,8 +28,8 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 @EnableWebMvc
 @EnableCaching
 @EnableScheduling
-public class Application
-        implements CommandLineRunner {
+public class Application implements CommandLineRunner
+{
     @Autowired
     private RestTemplateBuilder builder;
     @Value("${master.url}")
@@ -42,7 +38,6 @@ public class Application
     public static void main(String[] args) {
         SpringApplication.run(Application.class, args);
     }
-
 
     @Bean
     public RestTemplate restTemplate() {

@@ -4,9 +4,6 @@ server:
     session:
       timeout: 30m
     context-path: /wgcloud
-#日志文件输出路径
-logging:
-  path: ./log
 # 数据库 相关设置
 spring:
   application:
@@ -38,10 +35,9 @@ spring:
     cache: false
 #Mybatis配置
 mybatis:
-    mapper-locations: classpath:mapper/*.xml
-    #type-aliases-package: com.drops.domain.*
-    configuration:
-       call-setters-on-nulls: true
+  config-location: classpath:mybatis/mybatis-config.xml
+  mapper-locations: classpath:mybatis/mapper/*.xml
+
 
 #自定义配置参数
 base:
