@@ -50,7 +50,10 @@
 <body style="height: 100%">
 
 <blockquote class="layui-elem-quote news_search" style="border-left:5px solid #fff;">
-    <div class="layui-row">
+    <fieldset class="layui-elem-field layui-field-title" style="margin-top: 30px;">
+        <legend>条件检索</legend>
+    </fieldset>
+    <div class="layui-row" style="margin-left: 3%;">
         <form class="layui-form layui-col-md12 x-so" id="complain_search">
            编号:
             <div class="layui-input-inline">
@@ -79,13 +82,13 @@
     </div>
 
 </blockquote>
-<xblock>
+<xblock style="margin-left: 3%;">
     <button class="layui-btn layui-btn-danger" onclick="delAll()"><i class="layui-icon"></i>删除</button>
     <button class="layui-btn" onclick="x_admin_show('添加用户','./admin-add.html')"><i class="layui-icon"></i>添加</button>
 </xblock>
     <table class="layui-table" style="margin-left: 3%;width: 93%;">
         <thead>
-        <tr style="background-color: #ffffff;">
+        <tr style="">
             <th>
                 <div class="layui-unselect header layui-form-checkbox" lay-skin="primary"><i
                         class="layui-icon">&#xe605;</i></div>
