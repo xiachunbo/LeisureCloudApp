@@ -81,10 +81,6 @@ public class Application
         taskScheduler.setPoolSize(10);
         return taskScheduler;
     }
-    //@Bean
-    //public RestTemplate restTemplate() {
-     //   return this.restTemplateBuilider.build();
-    //}
 
     public void run(String... strings) throws Exception {
         try {

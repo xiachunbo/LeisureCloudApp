@@ -166,7 +166,7 @@ public class ScheduledTask {
         try {
             JSONObject paramsJson = new JSONObject();
             paramsJson.put("hostname",commonConfig.getBindIp());
-            String resultJson = restUtil.post(commonConfig.getServerUrl()+"/wgcloud/appInfo/agentList",paramsJson);
+            String resultJson = restUtil.post(commonConfig.getServerUrl()+"/appInfo/agentList",paramsJson);
             if(resultJson!=null){
                 JSONArray resultArray  = JSONUtil.parseArray(resultJson);
                 appInfoList.clear();

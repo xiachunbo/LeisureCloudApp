@@ -55,21 +55,24 @@ public class Application implements CommandLineRunner
 
     public void run(String... strings) throws Exception {
         try {
-            String[] nodes = this.url.split(",");
-            for (String node : nodes) {
-                new Thread(new Runnable() {
-                    @Override
-                    public void run() {
-                        NettyClient nettyClient = new NettyClient(node.split(":")[0], Integer.parseInt(node.split(":")[1]));
-                        try {
-                            nettyClient.connect();
-                        } catch (Exception e) {
-                            //e.printStackTrace();
+            if(this.url !=null && !"".equals(this.url)){
+                String[] nodes = this.url.split(",");
+                for (String node : nodes) {
+                    new Thread(new Runnable() {
+                        @Override
+                        public void run() {
+                            NettyClient nettyClient = new NettyClient(node.split(":")[0], Integer.parseInt(node.split(":")[1]));
+                            try {
+                                nettyClient.connect();
+                            } catch (Exception e) {
+                                //e.printStackTrace();
+                            }
                         }
-                    }
-                }).start();
-                System.out.println("链接建立完成");
+                    }).start();
+                    System.out.println("链接建立完成");
+                }
             }
+
         }
         catch (Exception e) {
             System.out.println("失败->" + e.toString());
