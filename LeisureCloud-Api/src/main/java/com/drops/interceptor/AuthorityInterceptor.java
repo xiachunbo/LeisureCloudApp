@@ -47,6 +47,10 @@ public class AuthorityInterceptor implements HandlerInterceptor {
         NOT_INTERCEPT_URI.add("/indexForJson");
 
         NOT_INTERCEPT_URI.add("/goHtmlByJson");
+
+        NOT_INTERCEPT_URI.add("/testxxxxx/dataBaseLock");
+
+
     }
 
 

@@ -10,7 +10,7 @@ spring:
     name: wgcloud-server
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/wgcloud?characterEncoding=utf-8&characterSetResults=utf8&autoReconnect=true&useSSL=false&allowMultiQueries=true
+    url: jdbc:mysql://localhost:3306/wdclould?characterEncoding=utf-8&characterSetResults=utf8&autoReconnect=true&useSSL=false&allowMultiQueries=true
     username: root
     password: 123456
     # hikari连接池的参数 相关设置
@@ -72,7 +72,7 @@ mail:
   heathWarnMail: yes
 
 master:
-    url: 192.168.50.66:9999
+    url: 10.195.10.239:9999
 
   #tcp监听的端口
 tcp:

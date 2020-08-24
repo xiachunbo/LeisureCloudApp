@@ -17,11 +17,11 @@ public interface GenericDao {
   List<LinkedHashMap<String, Object>> selectByParem(final String tableName,final String fields,final Map<String, Object> map);
 
   @UpdateProvider(type = SqlProvider.class, method = "updateByParem")
-  void updateByParem(String paramString, Map<String, Object> paramMap1, Map<String, Object> paramMap2);
+  void updateByParem(String tableName, Map<String, Object> paramMap1, Map<String, Object> map);
 
   @InsertProvider(type = SqlProvider.class, method = "insert")
-  int insert(String paramString, Map<String, Object> paramMap);
+  int insert(String tableName, Map<String, Object> map);
 
   @DeleteProvider(type = SqlProvider.class, method = "deleteByParem")
-  void deleteByParem(String paramString, Map<String, Object> paramMap);
+  void deleteByParem(String tableName, Map<String, Object> map);
 }
