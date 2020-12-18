@@ -7,7 +7,7 @@ server:
               timeout: PT5M
 
 master:
-    url: 192.168.50.66:9999
+    url: localhost:9999
 
 spring:
     application:

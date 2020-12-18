@@ -22,9 +22,8 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import java.nio.charset.Charset;
 
 @SpringBootApplication
-@MapperScan({"com.drops.mapper.*","com.wgcloud.mapper"})
-@ComponentScan(basePackages = {"com.wgcloud","com.drops"})
-@ServletComponentScan("com.wgcloud.filter")
+@MapperScan({"com.drops.mapper.*"})
+@ComponentScan(basePackages = {"com.drops"})
 @EnableWebMvc
 @EnableCaching
 @EnableScheduling
@@ -41,7 +40,6 @@ public class Application implements CommandLineRunner
 
     @Bean
     public RestTemplate restTemplate() {
-        //StringHttpMessageConverter m = new StringHttpMessageConverter(Charset.forName("UTF-8"));
         RestTemplate restTemplate = new RestTemplateBuilder().build();
         return restTemplate;
     }

@@ -3,14 +3,8 @@ package com.drops;
 import com.drops.nettyclient.NettyClient;
 import com.drops.service.AsyncThreadService;
 import com.github.pagehelper.PageHelper;
-
-import java.io.File;
 import java.nio.charset.Charset;
 import java.util.Properties;
-
-import com.wgcloud.SigarConfig;
-import org.apache.commons.io.monitor.FileAlterationMonitor;
-import org.apache.commons.io.monitor.FileAlterationObserver;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -33,7 +27,7 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 @SpringBootApplication(scanBasePackages = {"com.drops"}, exclude = {DataSourceAutoConfiguration.class})
 @MapperScan({"com.drops.mapper.*"})
-@ComponentScan(basePackages = {"com.wgcloud","com.drops"})
+@ComponentScan(basePackages = {"com.drops"})
 @EnableWebMvc
 @EnableCaching
 @EnableAsync//开启异步
@@ -44,8 +38,6 @@ public class Application
     private RestTemplateBuilder restTemplateBuilider;
     @Autowired
     private AsyncThreadService threadService;
-    @Autowired
-    private SigarConfig sigarConfig;
 
     @Value("${master.url}")
     private String url;
@@ -84,7 +76,6 @@ public class Application
 
     public void run(String... strings) throws Exception {
         try {
-            sigarConfig.initSigar();
             if(this.url !=null && !"".equals(this.url)){
                 String[] nodes = this.url.split(",");
                 for (String node : nodes) {
