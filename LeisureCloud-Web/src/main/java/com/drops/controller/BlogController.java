@@ -6,6 +6,8 @@ import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.drops.tools.SingletonPool;
 import com.github.pagehelper.PageInfo;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -19,6 +21,8 @@ import java.util.Map;
 @Controller
 public class BlogController {
 
+    private static final org.slf4j.Logger Logger = LoggerFactory.getLogger(BlogController.class);
+
     @Autowired
     private RestTemplate restTemplate;
     /**
@@ -29,6 +33,7 @@ public class BlogController {
     @RequestMapping(value = "/")
     public String pic_detail(Model model,@RequestParam(value = "jsonStr", required = false) String jsonStr,@RequestParam(value="pageNum", defaultValue="1") int pageNum,
                              @RequestParam(value="pageSize", defaultValue="10") int pageSize) {
+        Logger.info("博客首页");
         List<String> nodes = SingletonPool.nodePool;
         int num = (int) (Math.random() * nodes.size() + 0.0D);
         String urlAndArgs = nodes.get(num);
@@ -49,6 +54,7 @@ public class BlogController {
      */
     @RequestMapping(value = "/blogabout")
     public String about(Model model) {
+        Logger.info("关于");
         return "webblog/about";
     }
     /**
@@ -59,6 +65,7 @@ public class BlogController {
     @RequestMapping(value = "/blogartcle")
     public String artcle(Model model,@RequestParam(value = "jsonStr", required = false) String jsonStr,@RequestParam(value="pageNum", defaultValue="1") int pageNum,
                          @RequestParam(value="pageSize", defaultValue="10") int pageSize) {
+        Logger.info("文章");
         List<String> nodes = SingletonPool.nodePool;
         int num = (int) (Math.random() * nodes.size() + 0.0D);
         String urlAndArgs = nodes.get(num);
@@ -79,6 +86,7 @@ public class BlogController {
      */
     @RequestMapping(value = "/article_detail")
     public String detail(Model model,int id) {
+        Logger.info("文章detail");
         List<String> nodes = SingletonPool.nodePool;
         int num = (int) (Math.random() * nodes.size() + 0.0D);
         String urlAndArgs = nodes.get(num);
@@ -103,6 +111,7 @@ public class BlogController {
      */
     @RequestMapping(value = "/blogcomment")
     public String comment(Model model) {
+        Logger.info("留言");
         return "webblog/comment";
     }
     /**
@@ -113,6 +122,7 @@ public class BlogController {
     @RequestMapping(value = "/blogmoodList")
     public String moodList(Model model,@RequestParam(value = "jsonStr", required = false) String jsonStr,@RequestParam(value="pageNum", defaultValue="1") int pageNum,
                            @RequestParam(value="pageSize", defaultValue="10") int pageSize) {
+        Logger.info("成长");
         List<String> nodes = SingletonPool.nodePool;
         int num = (int) (Math.random() * nodes.size() + 0.0D);
         String urlAndArgs = nodes.get(num);
