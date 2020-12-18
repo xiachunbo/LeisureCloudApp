@@ -39,7 +39,7 @@ mybatis:
   mapper-locations: classpath:mybatis/mapper/*.xml
 
 master:
-    url: localhost:9999
+    url: localhost:9998
 
   #tcp监听的端口
 tcp:
